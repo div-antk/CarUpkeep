@@ -15,18 +15,58 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwf-gE-8qK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="維持費月額計算" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytQ-aD-RZm">
+                                        <rect key="frame" x="24" y="40" width="143" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstItem="ytQ-aD-RZm" firstAttribute="leading" secondItem="cwf-gE-8qK" secondAttribute="leading" constant="24" id="8dH-cJ-0pT"/>
+                                    <constraint firstAttribute="height" constant="80" id="Lac-Xq-AwN"/>
+                                    <constraint firstAttribute="bottom" secondItem="ytQ-aD-RZm" secondAttribute="bottom" constant="16" id="wHn-8Y-HLQ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="固定費" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGe-6d-tcR">
+                                <rect key="frame" x="32" y="104" width="49" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="絶対にかかるお金です💸" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWb-Fs-jQ5">
+                                <rect key="frame" x="32" y="127.5" width="140" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tWb-Fs-jQ5" firstAttribute="leading" secondItem="uGe-6d-tcR" secondAttribute="leading" id="4ed-8I-ua0"/>
+                            <constraint firstItem="uGe-6d-tcR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="B5E-1h-fdV"/>
+                            <constraint firstItem="tWb-Fs-jQ5" firstAttribute="top" secondItem="uGe-6d-tcR" secondAttribute="bottom" constant="4" id="RYH-gS-szC"/>
+                            <constraint firstItem="cwf-gE-8qK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ugv-BF-7bn"/>
+                            <constraint firstItem="cwf-gE-8qK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="e4F-7z-hsG"/>
+                            <constraint firstItem="uGe-6d-tcR" firstAttribute="top" secondItem="cwf-gE-8qK" secondAttribute="bottom" constant="24" id="egW-ag-Lp0"/>
+                            <constraint firstItem="cwf-gE-8qK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zzE-BU-Sur"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="94"/>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
