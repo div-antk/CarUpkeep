@@ -13,6 +13,8 @@
 		3B424FA22774A0B0004CDC57 /* CalculationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B424FA02774A0B0004CDC57 /* CalculationViewController.storyboard */; };
 		3B424FA42774A0B7004CDC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B424FA32774A0B7004CDC57 /* Assets.xcassets */; };
 		3B424FA72774A0B7004CDC57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B424FA52774A0B7004CDC57 /* LaunchScreen.storyboard */; };
+		3B9F18A4277891DC00227123 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F18A2277891DC00227123 /* TitleTableViewCell.swift */; };
+		3B9F18A5277891DC00227123 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F18A3277891DC00227123 /* TitleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3B424FA32774A0B7004CDC57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B424FA62774A0B7004CDC57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B424FA82774A0B7004CDC57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B9F18A2277891DC00227123 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		3B9F18A3277891DC00227123 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				3B424F9C2774A0B0004CDC57 /* SceneDelegate.swift */,
 				3B424F9E2774A0B0004CDC57 /* CalculationViewController.swift */,
 				3B424FA02774A0B0004CDC57 /* CalculationViewController.storyboard */,
+				3B9F18A2277891DC00227123 /* TitleTableViewCell.swift */,
+				3B9F18A3277891DC00227123 /* TitleTableViewCell.xib */,
 				3B424FA32774A0B7004CDC57 /* Assets.xcassets */,
 				3B424FA52774A0B7004CDC57 /* LaunchScreen.storyboard */,
 				3B424FA82774A0B7004CDC57 /* Info.plist */,
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B9F18A5277891DC00227123 /* TitleTableViewCell.xib in Resources */,
 				3B424FA72774A0B7004CDC57 /* LaunchScreen.storyboard in Resources */,
 				3B424FA42774A0B7004CDC57 /* Assets.xcassets in Resources */,
 				3B424FA22774A0B0004CDC57 /* CalculationViewController.storyboard in Resources */,
@@ -138,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B9F18A4277891DC00227123 /* TitleTableViewCell.swift in Sources */,
 				3B424F9F2774A0B0004CDC57 /* CalculationViewController.swift in Sources */,
 				3B424F9B2774A0B0004CDC57 /* AppDelegate.swift in Sources */,
 				3B424F9D2774A0B0004CDC57 /* SceneDelegate.swift in Sources */,
