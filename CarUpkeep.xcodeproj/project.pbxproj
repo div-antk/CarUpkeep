@@ -15,6 +15,8 @@
 		3B424FA72774A0B7004CDC57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B424FA52774A0B7004CDC57 /* LaunchScreen.storyboard */; };
 		3B9F18A4277891DC00227123 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F18A2277891DC00227123 /* TitleTableViewCell.swift */; };
 		3B9F18A5277891DC00227123 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F18A3277891DC00227123 /* TitleTableViewCell.xib */; };
+		3B9F18AC277893B800227123 /* AutomobileTaxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F18AA277893B800227123 /* AutomobileTaxTableViewCell.swift */; };
+		3B9F18AD277893B800227123 /* AutomobileTaxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F18AB277893B800227123 /* AutomobileTaxTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		3B424FA82774A0B7004CDC57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B9F18A2277891DC00227123 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		3B9F18A3277891DC00227123 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
+		3B9F18AA277893B800227123 /* AutomobileTaxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomobileTaxTableViewCell.swift; sourceTree = "<group>"; };
+		3B9F18AB277893B800227123 /* AutomobileTaxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutomobileTaxTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				3B424FA02774A0B0004CDC57 /* CalculationViewController.storyboard */,
 				3B9F18A2277891DC00227123 /* TitleTableViewCell.swift */,
 				3B9F18A3277891DC00227123 /* TitleTableViewCell.xib */,
+				3B9F18AA277893B800227123 /* AutomobileTaxTableViewCell.swift */,
+				3B9F18AB277893B800227123 /* AutomobileTaxTableViewCell.xib */,
 				3B424FA32774A0B7004CDC57 /* Assets.xcassets */,
 				3B424FA52774A0B7004CDC57 /* LaunchScreen.storyboard */,
 				3B424FA82774A0B7004CDC57 /* Info.plist */,
@@ -131,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B9F18AD277893B800227123 /* AutomobileTaxTableViewCell.xib in Resources */,
 				3B9F18A5277891DC00227123 /* TitleTableViewCell.xib in Resources */,
 				3B424FA72774A0B7004CDC57 /* LaunchScreen.storyboard in Resources */,
 				3B424FA42774A0B7004CDC57 /* Assets.xcassets in Resources */,
@@ -146,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B9F18A4277891DC00227123 /* TitleTableViewCell.swift in Sources */,
+				3B9F18AC277893B800227123 /* AutomobileTaxTableViewCell.swift in Sources */,
 				3B424F9F2774A0B0004CDC57 /* CalculationViewController.swift in Sources */,
 				3B424F9B2774A0B0004CDC57 /* AppDelegate.swift in Sources */,
 				3B424F9D2774A0B0004CDC57 /* SceneDelegate.swift in Sources */,
