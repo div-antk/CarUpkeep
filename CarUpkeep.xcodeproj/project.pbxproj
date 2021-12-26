@@ -19,6 +19,8 @@
 		3B9F18AD277893B800227123 /* AutomobileTaxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F18AB277893B800227123 /* AutomobileTaxTableViewCell.xib */; };
 		3B9F18B027789C5300227123 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F18AE27789C5300227123 /* ResultTableViewCell.swift */; };
 		3B9F18B127789C5300227123 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F18AF27789C5300227123 /* ResultTableViewCell.xib */; };
+		3B9F18B727789DB400227123 /* WeightTaxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F18B527789DB400227123 /* WeightTaxTableViewCell.swift */; };
+		3B9F18B827789DB400227123 /* WeightTaxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F18B627789DB400227123 /* WeightTaxTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		3B9F18AB277893B800227123 /* AutomobileTaxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutomobileTaxTableViewCell.xib; sourceTree = "<group>"; };
 		3B9F18AE27789C5300227123 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 		3B9F18AF27789C5300227123 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
+		3B9F18B527789DB400227123 /* WeightTaxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightTaxTableViewCell.swift; sourceTree = "<group>"; };
+		3B9F18B627789DB400227123 /* WeightTaxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeightTaxTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 				3B9F18A3277891DC00227123 /* TitleTableViewCell.xib */,
 				3B9F18AA277893B800227123 /* AutomobileTaxTableViewCell.swift */,
 				3B9F18AB277893B800227123 /* AutomobileTaxTableViewCell.xib */,
+				3B9F18B527789DB400227123 /* WeightTaxTableViewCell.swift */,
+				3B9F18B627789DB400227123 /* WeightTaxTableViewCell.xib */,
 				3B9F18AE27789C5300227123 /* ResultTableViewCell.swift */,
 				3B9F18AF27789C5300227123 /* ResultTableViewCell.xib */,
 				3B424FA32774A0B7004CDC57 /* Assets.xcassets */,
@@ -149,6 +155,7 @@
 				3B424FA72774A0B7004CDC57 /* LaunchScreen.storyboard in Resources */,
 				3B424FA42774A0B7004CDC57 /* Assets.xcassets in Resources */,
 				3B424FA22774A0B0004CDC57 /* CalculationViewController.storyboard in Resources */,
+				3B9F18B827789DB400227123 /* WeightTaxTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +170,7 @@
 				3B9F18AC277893B800227123 /* AutomobileTaxTableViewCell.swift in Sources */,
 				3B424F9F2774A0B0004CDC57 /* CalculationViewController.swift in Sources */,
 				3B424F9B2774A0B0004CDC57 /* AppDelegate.swift in Sources */,
+				3B9F18B727789DB400227123 /* WeightTaxTableViewCell.swift in Sources */,
 				3B9F18B027789C5300227123 /* ResultTableViewCell.swift in Sources */,
 				3B424F9D2774A0B0004CDC57 /* SceneDelegate.swift in Sources */,
 			);
