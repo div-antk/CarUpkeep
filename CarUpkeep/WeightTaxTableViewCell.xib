@@ -151,6 +151,14 @@
                             <constraint firstItem="Uc6-3O-vhE" firstAttribute="centerY" secondItem="Dhb-He-HwZ" secondAttribute="centerY" id="uRj-t0-HJy"/>
                             <constraint firstItem="Dhb-He-HwZ" firstAttribute="leading" secondItem="L8j-ia-AEN" secondAttribute="trailing" constant="4" id="yEs-Ot-6Gp"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <constraints>

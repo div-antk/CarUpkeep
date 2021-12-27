@@ -130,6 +130,14 @@
                             <constraint firstItem="NTh-7O-fdD" firstAttribute="top" secondItem="Fi3-aq-yBp" secondAttribute="top" constant="16" id="v4y-SP-I0r"/>
                             <constraint firstItem="nV7-vC-n3U" firstAttribute="centerY" secondItem="TdA-dx-cAu" secondAttribute="centerY" id="zNb-8d-JQ3"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <constraints>
