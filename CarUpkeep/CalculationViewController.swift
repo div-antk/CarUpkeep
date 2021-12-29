@@ -14,8 +14,21 @@ class CalculationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 
 }
 
+extension CalculationViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+}
