@@ -10,7 +10,10 @@ import Instantiate
 import InstantiateStandard
 
 class ResultTableViewCell: UITableViewCell, Reusable {
-
+    
+    @IBOutlet weak var tilteLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
