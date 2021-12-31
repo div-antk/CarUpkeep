@@ -86,9 +86,18 @@
 				3B424F9A2774A0B0004CDC57 /* AppDelegate.swift */,
 				3B424F9C2774A0B0004CDC57 /* SceneDelegate.swift */,
 				3B424F9E2774A0B0004CDC57 /* CalculationViewController.swift */,
-				3B4E3AF4277DF69100D06785 /* InsuranceTableViewCell.swift */,
-				3B4E3AF5277DF69100D06785 /* InsuranceTableViewCell.xib */,
 				3B424FA02774A0B0004CDC57 /* CalculationViewController.storyboard */,
+				3B4E3AF8277F11E100D06785 /* Cell */,
+				3B424FA32774A0B7004CDC57 /* Assets.xcassets */,
+				3B424FA52774A0B7004CDC57 /* LaunchScreen.storyboard */,
+				3B424FA82774A0B7004CDC57 /* Info.plist */,
+			);
+			path = CarUpkeep;
+			sourceTree = "<group>";
+		};
+		3B4E3AF8277F11E100D06785 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
 				3B9F18A2277891DC00227123 /* TitleTableViewCell.swift */,
 				3B9F18A3277891DC00227123 /* TitleTableViewCell.xib */,
 				3B9F18AA277893B800227123 /* AutomobileTaxTableViewCell.swift */,
@@ -97,11 +106,10 @@
 				3B9F18B627789DB400227123 /* WeightTaxTableViewCell.xib */,
 				3B9F18AE27789C5300227123 /* ResultTableViewCell.swift */,
 				3B9F18AF27789C5300227123 /* ResultTableViewCell.xib */,
-				3B424FA32774A0B7004CDC57 /* Assets.xcassets */,
-				3B424FA52774A0B7004CDC57 /* LaunchScreen.storyboard */,
-				3B424FA82774A0B7004CDC57 /* Info.plist */,
+				3B4E3AF4277DF69100D06785 /* InsuranceTableViewCell.swift */,
+				3B4E3AF5277DF69100D06785 /* InsuranceTableViewCell.xib */,
 			);
-			path = CarUpkeep;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		5457DE42B5127B0F6E0D0076 /* Frameworks */ = {
@@ -118,7 +126,6 @@
 				F8F32A712EA177B544989E1E /* Pods-CarUpkeep.debug.xcconfig */,
 				4FF455297008D3DE71AB66FF /* Pods-CarUpkeep.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
