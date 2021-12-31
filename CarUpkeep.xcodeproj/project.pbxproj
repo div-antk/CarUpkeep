@@ -23,6 +23,7 @@
 		3B9F18B127789C5300227123 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F18AF27789C5300227123 /* ResultTableViewCell.xib */; };
 		3B9F18B727789DB400227123 /* WeightTaxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F18B527789DB400227123 /* WeightTaxTableViewCell.swift */; };
 		3B9F18B827789DB400227123 /* WeightTaxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F18B627789DB400227123 /* WeightTaxTableViewCell.xib */; };
+		C7E7B7C0F9B4896350444EA1 /* Pods_CarUpkeep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16896EC2DA68AA5BE1CA5B4 /* Pods_CarUpkeep.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,9 @@
 		3B9F18AF27789C5300227123 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
 		3B9F18B527789DB400227123 /* WeightTaxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightTaxTableViewCell.swift; sourceTree = "<group>"; };
 		3B9F18B627789DB400227123 /* WeightTaxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeightTaxTableViewCell.xib; sourceTree = "<group>"; };
+		4FF455297008D3DE71AB66FF /* Pods-CarUpkeep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarUpkeep.release.xcconfig"; path = "Target Support Files/Pods-CarUpkeep/Pods-CarUpkeep.release.xcconfig"; sourceTree = "<group>"; };
+		B16896EC2DA68AA5BE1CA5B4 /* Pods_CarUpkeep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarUpkeep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8F32A712EA177B544989E1E /* Pods-CarUpkeep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarUpkeep.debug.xcconfig"; path = "Target Support Files/Pods-CarUpkeep/Pods-CarUpkeep.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7E7B7C0F9B4896350444EA1 /* Pods_CarUpkeep.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,8 @@
 			children = (
 				3B424F992774A0B0004CDC57 /* CarUpkeep */,
 				3B424F982774A0B0004CDC57 /* Products */,
+				8ECD02E0EB63BE6E5BD1F0EA /* Pods */,
+				5457DE42B5127B0F6E0D0076 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +104,24 @@
 			path = CarUpkeep;
 			sourceTree = "<group>";
 		};
+		5457DE42B5127B0F6E0D0076 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B16896EC2DA68AA5BE1CA5B4 /* Pods_CarUpkeep.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8ECD02E0EB63BE6E5BD1F0EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8F32A712EA177B544989E1E /* Pods-CarUpkeep.debug.xcconfig */,
+				4FF455297008D3DE71AB66FF /* Pods-CarUpkeep.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B424FAB2774A0B7004CDC57 /* Build configuration list for PBXNativeTarget "CarUpkeep" */;
 			buildPhases = (
+				77A8C939299197098563F889 /* [CP] Check Pods Manifest.lock */,
 				3B424F932774A0B0004CDC57 /* Sources */,
 				3B424F942774A0B0004CDC57 /* Frameworks */,
 				3B424F952774A0B0004CDC57 /* Resources */,
+				432470CC734C317DD9F4EE7F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +194,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		432470CC734C317DD9F4EE7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarUpkeep/Pods-CarUpkeep-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarUpkeep/Pods-CarUpkeep-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarUpkeep/Pods-CarUpkeep-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77A8C939299197098563F889 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarUpkeep-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B424F932774A0B0004CDC57 /* Sources */ = {
@@ -324,6 +393,7 @@
 		};
 		3B424FAC2774A0B7004CDC57 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8F32A712EA177B544989E1E /* Pods-CarUpkeep.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -352,6 +422,7 @@
 		};
 		3B424FAD2774A0B7004CDC57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FF455297008D3DE71AB66FF /* Pods-CarUpkeep.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
