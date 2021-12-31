@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import Instantiate
+import InstantiateStandard
 
-class AutomobileTaxTableViewCell: UITableViewCell {
+class AutomobileTaxTableViewCell: UITableViewCell, Reusable {
 
     override func awakeFromNib() {
         super.awakeFromNib()

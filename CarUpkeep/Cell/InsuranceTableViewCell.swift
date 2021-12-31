@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import Instantiate
+import InstantiateStandard
 
-class InsuranceTableViewCell: UITableViewCell {
+class InsuranceTableViewCell: UITableViewCell, Reusable {
 
     override func awakeFromNib() {
         super.awakeFromNib()

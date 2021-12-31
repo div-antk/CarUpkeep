@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import Instantiate
+import InstantiateStandard
 
-class TitleTableViewCell: UITableViewCell {
+class TitleTableViewCell: UITableViewCell, Reusable {
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import Instantiate
+import InstantiateStandard
 
-class ResultTableViewCell: UITableViewCell {
+class ResultTableViewCell: UITableViewCell, Reusable {
 
     override func awakeFromNib() {
         super.awakeFromNib()

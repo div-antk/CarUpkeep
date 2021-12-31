@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import Instantiate
+import InstantiateStandard
 
-class WeightTaxTableViewCell: UITableViewCell {
+class WeightTaxTableViewCell: UITableViewCell, Reusable {
 
     override func awakeFromNib() {
         super.awakeFromNib()
