@@ -11,9 +11,13 @@ import InstantiateStandard
 
 class AutomobileTaxTableViewCell: UITableViewCell, Reusable {
 
+    @IBOutlet weak var bgLayerView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
+        bgLayerView.layer.borderWidth = 2
+        bgLayerView.layer.borderColor = UIColor.white.cgColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

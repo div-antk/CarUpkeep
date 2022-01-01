@@ -13,10 +13,13 @@ class ResultTableViewCell: UITableViewCell, Reusable {
     
     @IBOutlet weak var tilteLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var bgLayerView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        bgLayerView.layer.borderWidth = 2
+        bgLayerView.layer.borderColor = UIColor.white.cgColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
