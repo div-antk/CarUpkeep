@@ -8,5 +8,6 @@ target 'CarUpkeep' do
   # Pods for CarUpkeep
   pod 'Instantiate'
   pod 'InstantiateStandard'
+  pod 'Parchment'
 
 end

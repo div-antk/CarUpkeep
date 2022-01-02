@@ -2,20 +2,24 @@ PODS:
   - Instantiate (4.0.0)
   - InstantiateStandard (4.0.0):
     - Instantiate (~> 4.0)
+  - Parchment (3.1.0)
 
 DEPENDENCIES:
   - Instantiate
   - InstantiateStandard
+  - Parchment
 
 SPEC REPOS:
   trunk:
     - Instantiate
     - InstantiateStandard
+    - Parchment
 
 SPEC CHECKSUMS:
   Instantiate: 62516e7dde448721c1f5815a9ee7e0669d034d52
   InstantiateStandard: 18ab1417ba787113350c71a5b2251f0b4448be67
+  Parchment: 6250722ed0456d68f6bae03118eda722a28486f3
 
-PODFILE CHECKSUM: 2abd0950651d9b62124a8cf605c10313ab6ebf47
+PODFILE CHECKSUM: 327089f13e9797d3579365474f8e749b37d40cab
 
 COCOAPODS: 1.11.2
