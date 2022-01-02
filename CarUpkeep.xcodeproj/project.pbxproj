@@ -15,6 +15,8 @@
 		3B424FA72774A0B7004CDC57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B424FA52774A0B7004CDC57 /* LaunchScreen.storyboard */; };
 		3B4E3AF6277DF69100D06785 /* InsuranceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4E3AF4277DF69100D06785 /* InsuranceTableViewCell.swift */; };
 		3B4E3AF7277DF69100D06785 /* InsuranceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4E3AF5277DF69100D06785 /* InsuranceTableViewCell.xib */; };
+		3B8FFF6C2781B0150079E938 /* TaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FFF6B2781B0140079E938 /* TaxViewController.swift */; };
+		3B8FFF6E2781B03E0079E938 /* TaxViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8FFF6D2781B03E0079E938 /* TaxViewController.storyboard */; };
 		3B9F18A4277891DC00227123 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F18A2277891DC00227123 /* TitleTableViewCell.swift */; };
 		3B9F18A5277891DC00227123 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F18A3277891DC00227123 /* TitleTableViewCell.xib */; };
 		3B9F18AC277893B800227123 /* AutomobileTaxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F18AA277893B800227123 /* AutomobileTaxTableViewCell.swift */; };
@@ -37,6 +39,8 @@
 		3B424FA82774A0B7004CDC57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B4E3AF4277DF69100D06785 /* InsuranceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceTableViewCell.swift; sourceTree = "<group>"; };
 		3B4E3AF5277DF69100D06785 /* InsuranceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InsuranceTableViewCell.xib; sourceTree = "<group>"; };
+		3B8FFF6B2781B0140079E938 /* TaxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxViewController.swift; sourceTree = "<group>"; };
+		3B8FFF6D2781B03E0079E938 /* TaxViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaxViewController.storyboard; sourceTree = "<group>"; };
 		3B9F18A2277891DC00227123 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		3B9F18A3277891DC00227123 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		3B9F18AA277893B800227123 /* AutomobileTaxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomobileTaxTableViewCell.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 				3B424F9C2774A0B0004CDC57 /* SceneDelegate.swift */,
 				3B424F9E2774A0B0004CDC57 /* CalculationViewController.swift */,
 				3B424FA02774A0B0004CDC57 /* CalculationViewController.storyboard */,
+				3B8FFF6B2781B0140079E938 /* TaxViewController.swift */,
+				3B8FFF6D2781B03E0079E938 /* TaxViewController.storyboard */,
 				3B4E3AF8277F11E100D06785 /* Cell */,
 				3B424FA32774A0B7004CDC57 /* Assets.xcassets */,
 				3B424FA52774A0B7004CDC57 /* LaunchScreen.storyboard */,
@@ -191,6 +197,7 @@
 			files = (
 				3B9F18AD277893B800227123 /* AutomobileTaxTableViewCell.xib in Resources */,
 				3B9F18A5277891DC00227123 /* TitleTableViewCell.xib in Resources */,
+				3B8FFF6E2781B03E0079E938 /* TaxViewController.storyboard in Resources */,
 				3B9F18B127789C5300227123 /* ResultTableViewCell.xib in Resources */,
 				3B424FA72774A0B7004CDC57 /* LaunchScreen.storyboard in Resources */,
 				3B424FA42774A0B7004CDC57 /* Assets.xcassets in Resources */,
@@ -254,6 +261,7 @@
 				3B4E3AF6277DF69100D06785 /* InsuranceTableViewCell.swift in Sources */,
 				3B424F9F2774A0B0004CDC57 /* CalculationViewController.swift in Sources */,
 				3B424F9B2774A0B0004CDC57 /* AppDelegate.swift in Sources */,
+				3B8FFF6C2781B0150079E938 /* TaxViewController.swift in Sources */,
 				3B9F18B727789DB400227123 /* WeightTaxTableViewCell.swift in Sources */,
 				3B9F18B027789C5300227123 /* ResultTableViewCell.swift in Sources */,
 				3B424F9D2774A0B0004CDC57 /* SceneDelegate.swift in Sources */,
