@@ -7,90 +7,35 @@
 
 import UIKit
 import Instantiate
+import Parchment
 
 class CalculationViewController: UIViewController, StoryboardInstantiatable {
-
-    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        
-        tableView.estimatedRowHeight = 270
-        tableView.rowHeight = UITableView.automaticDimension
-        
-        // カスタムセルを登録
-        tableView.register(UINib(nibName: TitleTableViewCell.reusableIdentifier, bundle: nil), forCellReuseIdentifier: TitleTableViewCell.reusableIdentifier)
-        
-        tableView.register(UINib(nibName: AutomobileTaxTableViewCell.reusableIdentifier, bundle: nil), forCellReuseIdentifier: AutomobileTaxTableViewCell.reusableIdentifier)
-
-        tableView.register(UINib(nibName: WeightTaxTableViewCell.reusableIdentifier, bundle: nil), forCellReuseIdentifier: WeightTaxTableViewCell.reusableIdentifier)
-
-        tableView.register(UINib(nibName: ResultTableViewCell.reusableIdentifier, bundle: nil), forCellReuseIdentifier: ResultTableViewCell.reusableIdentifier)
-        
-    }
-
-}
-
-extension CalculationViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        initPagingVC()
     }
     
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    private func initPagingVC() {
+       
+        let taxViewController = TaxViewController.instantiate()
+        taxViewController.title = "税金"
         
-        
-        switch indexPath.item {
-        case 0:
-            guard let titleCell = tableView.dequeueReusableCell(withIdentifier: TitleTableViewCell.reusableIdentifier, for: indexPath) as? TitleTableViewCell else {
-                return UITableViewCell()
-            }
-            
-            titleCell.titleLabel.text = "税金"
-            titleCell.subtitleLabel.text = "絶対にかかるお金です💸"
-            
-            return titleCell
-            
-        case 1:
-            guard let automobileTaxCell = tableView.dequeueReusableCell(withIdentifier: AutomobileTaxTableViewCell.reusableIdentifier, for: indexPath) as? AutomobileTaxTableViewCell else {
-                return UITableViewCell()
-            }
-            
-            return automobileTaxCell
-        
-        case 2:
-            guard let resultCell = tableView.dequeueReusableCell(withIdentifier: ResultTableViewCell.reusableIdentifier, for: indexPath) as? ResultTableViewCell else {
-                return UITableViewCell()
-            }
-           
-            resultCell.tilteLabel.text = "自動車税"
-            
-            return resultCell
-            
-         case 3:
-            guard let weightTaxCell = tableView.dequeueReusableCell(withIdentifier: WeightTaxTableViewCell.reusableIdentifier, for: indexPath) as? WeightTaxTableViewCell else {
-                return UITableViewCell()
-            }
-            
-            return weightTaxCell
-            
-         case 4:
-            guard let resultCell = tableView.dequeueReusableCell(withIdentifier: ResultTableViewCell.reusableIdentifier, for: indexPath) as? ResultTableViewCell else {
-                return UITableViewCell()
-            }
-            
-            resultCell.tilteLabel.text = "重量税"
-            
-            return resultCell
-            
-        default:
-            return UITableViewCell()
-        }
-        
+        let pagingVC = PagingViewController(viewControllers: [
+            taxViewController
+        ])
+        addChild(pagingVC)
+        view.addSubview(pagingVC.view)
+        pagingVC.didMove(toParent: self)
+        pagingVC.view.translatesAutoresizingMaskIntoConstraints = false
+       
+        NSLayoutConstraint.activate([
+            pagingVC.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            pagingVC.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            pagingVC.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            pagingVC.view.topAnchor.constraint(equalTo: view.topAnchor)
+        ])
     }
-    
+
 }
