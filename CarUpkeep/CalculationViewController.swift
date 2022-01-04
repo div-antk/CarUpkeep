@@ -30,7 +30,12 @@ class CalculationViewController: UIViewController, StoryboardInstantiatable {
         pagingVC.didMove(toParent: self)
         pagingVC.view.translatesAutoresizingMaskIntoConstraints = false
       
-        pagingVC.includeSafeAreaInsets = true
+        // 表示設定
+        pagingVC.textColor = .black
+        pagingVC.selectedTextColor = .white
+        pagingVC.indicatorColor = .white
+        pagingVC.backgroundColor = .darkGray
+        pagingVC.selectedBackgroundColor = .darkGray
         
         // インジケーターの設定
 //        pagingVC.indicatorOptions = .visible(
