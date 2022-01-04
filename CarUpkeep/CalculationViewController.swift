@@ -29,12 +29,21 @@ class CalculationViewController: UIViewController, StoryboardInstantiatable {
         view.addSubview(pagingVC.view)
         pagingVC.didMove(toParent: self)
         pagingVC.view.translatesAutoresizingMaskIntoConstraints = false
-       
+      
+        pagingVC.includeSafeAreaInsets = true
+        
+        // インジケーターの設定
+//        pagingVC.indicatorOptions = .visible(
+//            height: 4,
+//            zIndex: Int.max,
+//            spacing: UIEdgeInsets.zero,
+//            insets: UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8))
+        
         NSLayoutConstraint.activate([
             pagingVC.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             pagingVC.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             pagingVC.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            pagingVC.view.topAnchor.constraint(equalTo: view.topAnchor)
+            pagingVC.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor)
         ])
     }
 
