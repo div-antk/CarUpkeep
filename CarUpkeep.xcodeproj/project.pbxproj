@@ -25,6 +25,8 @@
 		3B9F18B127789C5300227123 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F18AF27789C5300227123 /* ResultTableViewCell.xib */; };
 		3B9F18B727789DB400227123 /* WeightTaxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F18B527789DB400227123 /* WeightTaxTableViewCell.swift */; };
 		3B9F18B827789DB400227123 /* WeightTaxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F18B627789DB400227123 /* WeightTaxTableViewCell.xib */; };
+		3BE568352785B80C00510579 /* InsuranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE568342785B80C00510579 /* InsuranceViewController.swift */; };
+		3BE568372785B81C00510579 /* InsuranceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE568362785B81C00510579 /* InsuranceViewController.storyboard */; };
 		C7E7B7C0F9B4896350444EA1 /* Pods_CarUpkeep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16896EC2DA68AA5BE1CA5B4 /* Pods_CarUpkeep.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		3B9F18AF27789C5300227123 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
 		3B9F18B527789DB400227123 /* WeightTaxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightTaxTableViewCell.swift; sourceTree = "<group>"; };
 		3B9F18B627789DB400227123 /* WeightTaxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeightTaxTableViewCell.xib; sourceTree = "<group>"; };
+		3BE568342785B80C00510579 /* InsuranceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceViewController.swift; sourceTree = "<group>"; };
+		3BE568362785B81C00510579 /* InsuranceViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InsuranceViewController.storyboard; sourceTree = "<group>"; };
 		4FF455297008D3DE71AB66FF /* Pods-CarUpkeep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarUpkeep.release.xcconfig"; path = "Target Support Files/Pods-CarUpkeep/Pods-CarUpkeep.release.xcconfig"; sourceTree = "<group>"; };
 		B16896EC2DA68AA5BE1CA5B4 /* Pods_CarUpkeep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarUpkeep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F32A712EA177B544989E1E /* Pods-CarUpkeep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarUpkeep.debug.xcconfig"; path = "Target Support Files/Pods-CarUpkeep/Pods-CarUpkeep.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 				3B424FA02774A0B0004CDC57 /* CalculationViewController.storyboard */,
 				3B8FFF6B2781B0140079E938 /* TaxViewController.swift */,
 				3B8FFF6D2781B03E0079E938 /* TaxViewController.storyboard */,
+				3BE568342785B80C00510579 /* InsuranceViewController.swift */,
+				3BE568362785B81C00510579 /* InsuranceViewController.storyboard */,
 				3B4E3AF8277F11E100D06785 /* Cell */,
 				3B424FA32774A0B7004CDC57 /* Assets.xcassets */,
 				3B424FA52774A0B7004CDC57 /* LaunchScreen.storyboard */,
@@ -203,6 +209,7 @@
 				3B424FA42774A0B7004CDC57 /* Assets.xcassets in Resources */,
 				3B424FA22774A0B0004CDC57 /* CalculationViewController.storyboard in Resources */,
 				3B4E3AF7277DF69100D06785 /* InsuranceTableViewCell.xib in Resources */,
+				3BE568372785B81C00510579 /* InsuranceViewController.storyboard in Resources */,
 				3B9F18B827789DB400227123 /* WeightTaxTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +270,7 @@
 				3B424F9B2774A0B0004CDC57 /* AppDelegate.swift in Sources */,
 				3B8FFF6C2781B0150079E938 /* TaxViewController.swift in Sources */,
 				3B9F18B727789DB400227123 /* WeightTaxTableViewCell.swift in Sources */,
+				3BE568352785B80C00510579 /* InsuranceViewController.swift in Sources */,
 				3B9F18B027789C5300227123 /* ResultTableViewCell.swift in Sources */,
 				3B424F9D2774A0B0004CDC57 /* SceneDelegate.swift in Sources */,
 			);

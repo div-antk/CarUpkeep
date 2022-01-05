@@ -19,12 +19,17 @@ class CalculationViewController: UIViewController, StoryboardInstantiatable {
     
     private func initPagingVC() {
        
-        let taxViewController = TaxViewController.instantiate()
-        taxViewController.title = "税金"
+        let taxVC = TaxViewController.instantiate()
+        taxVC.title = "税金"
+       
+        let insuranceVC = InsuranceViewController()
+        insuranceVC.title = "保険"
         
         let pagingVC = PagingViewController(viewControllers: [
-            taxViewController
+            taxVC,
+            insuranceVC
         ])
+        
         addChild(pagingVC)
         view.addSubview(pagingVC.view)
         pagingVC.didMove(toParent: self)
