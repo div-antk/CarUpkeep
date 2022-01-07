@@ -22,7 +22,7 @@ class CalculationViewController: UIViewController, StoryboardInstantiatable {
         let taxVC = TaxViewController.instantiate()
         taxVC.title = "税金"
        
-        let insuranceVC = InsuranceViewController()
+        let insuranceVC = InsuranceViewController.instantiate()
         insuranceVC.title = "保険"
         
         let pagingVC = PagingViewController(viewControllers: [
