@@ -30,10 +30,13 @@
                             <constraint firstItem="yQ3-MI-3o6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="gFN-A5-ZL3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="yQ3-MI-3o6" id="9OB-8N-uwu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23.188405797101453" y="70.982142857142847"/>
+            <point key="canvasLocation" x="187" y="74"/>
         </scene>
     </scenes>
     <resources>
