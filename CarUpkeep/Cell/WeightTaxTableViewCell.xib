@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nHB-IX-SVh">
-                        <rect key="frame" x="16" y="16" width="288" height="260"/>
+                        <rect key="frame" x="16" y="4" width="288" height="260"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ハイブリッド車" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkC-XK-qRB">
                                 <rect key="frame" x="92" y="210.5" width="115" height="20"/>
@@ -156,7 +156,7 @@
                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="nHB-IX-SVh" secondAttribute="trailing" constant="16" id="EM3-aV-v8Q"/>
-                    <constraint firstItem="nHB-IX-SVh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="KoU-pU-GIl"/>
+                    <constraint firstItem="nHB-IX-SVh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="KoU-pU-GIl"/>
                     <constraint firstAttribute="bottom" secondItem="nHB-IX-SVh" secondAttribute="bottom" id="Uun-Yr-i6T"/>
                     <constraint firstItem="nHB-IX-SVh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="p9U-dB-gC3"/>
                 </constraints>

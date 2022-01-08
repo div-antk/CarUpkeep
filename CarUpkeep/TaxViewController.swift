@@ -9,7 +9,7 @@ import UIKit
 import Instantiate
 
 class TaxViewController: UIViewController, StoryboardInstantiatable {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -25,33 +25,32 @@ class TaxViewController: UIViewController, StoryboardInstantiatable {
         tableView.register(UINib(nibName: TitleTableViewCell.reusableIdentifier, bundle: nil), forCellReuseIdentifier: TitleTableViewCell.reusableIdentifier)
         
         tableView.register(UINib(nibName: AutomobileTaxTableViewCell.reusableIdentifier, bundle: nil), forCellReuseIdentifier: AutomobileTaxTableViewCell.reusableIdentifier)
-
+        
         tableView.register(UINib(nibName: WeightTaxTableViewCell.reusableIdentifier, bundle: nil), forCellReuseIdentifier: WeightTaxTableViewCell.reusableIdentifier)
-
+        
         tableView.register(UINib(nibName: ResultTableViewCell.reusableIdentifier, bundle: nil), forCellReuseIdentifier: ResultTableViewCell.reusableIdentifier)
         
     }
-
+    
 }
 
 extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 6
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        guard let titleCell = tableView.dequeueReusableCell(withIdentifier: TitleTableViewCell.reusableIdentifier, for: indexPath) as? TitleTableViewCell else {
+            return UITableViewCell()
+        }
         
         switch indexPath.item {
         case 0:
-            guard let titleCell = tableView.dequeueReusableCell(withIdentifier: TitleTableViewCell.reusableIdentifier, for: indexPath) as? TitleTableViewCell else {
-                return UITableViewCell()
-            }
-            
-            titleCell.titleLabel.text = "税金"
-            titleCell.subtitleLabel.text = "絶対にかかるお金です💸"
+            titleCell.titleLabel.text = "自動車税"
+            titleCell.subtitleLabel.text = ""
             
             return titleCell
             
@@ -61,24 +60,30 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
             }
             
             return automobileTaxCell
-        
+            
         case 2:
             guard let resultCell = tableView.dequeueReusableCell(withIdentifier: ResultTableViewCell.reusableIdentifier, for: indexPath) as? ResultTableViewCell else {
                 return UITableViewCell()
             }
-           
+            
             resultCell.tilteLabel.text = "自動車税"
             
             return resultCell
             
-         case 3:
+        case 3:
+            titleCell.titleLabel.text = "重量税"
+            titleCell.subtitleLabel.text = ""
+            
+            return titleCell
+            
+        case 4:
             guard let weightTaxCell = tableView.dequeueReusableCell(withIdentifier: WeightTaxTableViewCell.reusableIdentifier, for: indexPath) as? WeightTaxTableViewCell else {
                 return UITableViewCell()
             }
             
             return weightTaxCell
             
-         case 4:
+        case 5:
             guard let resultCell = tableView.dequeueReusableCell(withIdentifier: ResultTableViewCell.reusableIdentifier, for: indexPath) as? ResultTableViewCell else {
                 return UITableViewCell()
             }

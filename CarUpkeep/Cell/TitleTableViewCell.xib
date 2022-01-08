@@ -13,7 +13,7 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="78" id="KGk-i7-Jjw" customClass="TitleTableViewCell" customModule="CarUpkeep" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="309" height="78"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="309" height="78"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -25,6 +25,9 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKU-Dz-sax">
                         <rect key="frame" x="32" y="24" width="34.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="0lo-0o-LOX"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -36,6 +39,7 @@
                     <constraint firstItem="VKU-Dz-sax" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="R9Y-h6-n9k"/>
                     <constraint firstItem="VKU-Dz-sax" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="tjt-57-U9Y"/>
                     <constraint firstItem="5VP-DY-Kgx" firstAttribute="leading" secondItem="VKU-Dz-sax" secondAttribute="trailing" constant="8" id="wc3-NB-GHe"/>
+                    <constraint firstAttribute="bottom" secondItem="VKU-Dz-sax" secondAttribute="bottom" constant="8" id="zTM-uk-Ncs"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
