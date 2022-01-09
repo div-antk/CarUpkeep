@@ -18,28 +18,38 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VP-DY-Kgx">
-                        <rect key="frame" x="74.5" y="26.5" width="44" height="15"/>
+                        <rect key="frame" x="69.5" y="26.5" width="44" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKU-Dz-sax">
-                        <rect key="frame" x="32" y="24" width="34.5" height="20"/>
+                        <rect key="frame" x="24" y="24" width="37.5" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="0lo-0o-LOX"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aT1-8E-vv3">
+                        <rect key="frame" x="12" y="48" width="285" height="2"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="lYl-cG-TPC"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                 <constraints>
+                    <constraint firstItem="aT1-8E-vv3" firstAttribute="top" secondItem="VKU-Dz-sax" secondAttribute="bottom" constant="4" id="0lP-W3-hq2"/>
                     <constraint firstItem="5VP-DY-Kgx" firstAttribute="centerY" secondItem="VKU-Dz-sax" secondAttribute="centerY" id="HSJ-qs-Zdb"/>
                     <constraint firstItem="VKU-Dz-sax" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="R9Y-h6-n9k"/>
-                    <constraint firstItem="VKU-Dz-sax" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="tjt-57-U9Y"/>
+                    <constraint firstAttribute="bottom" secondItem="aT1-8E-vv3" secondAttribute="bottom" constant="16" id="fCe-8Y-IL4"/>
+                    <constraint firstAttribute="trailing" secondItem="aT1-8E-vv3" secondAttribute="trailing" constant="12" id="mxC-JS-BaR"/>
+                    <constraint firstItem="aT1-8E-vv3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="qDZ-F4-HSQ"/>
+                    <constraint firstItem="VKU-Dz-sax" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="tjt-57-U9Y"/>
                     <constraint firstItem="5VP-DY-Kgx" firstAttribute="leading" secondItem="VKU-Dz-sax" secondAttribute="trailing" constant="8" id="wc3-NB-GHe"/>
-                    <constraint firstAttribute="bottom" secondItem="VKU-Dz-sax" secondAttribute="bottom" constant="8" id="zTM-uk-Ncs"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
