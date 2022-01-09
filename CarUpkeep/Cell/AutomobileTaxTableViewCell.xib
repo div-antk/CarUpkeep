@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fi3-aq-yBp">
-                        <rect key="frame" x="16" y="4" width="333" height="226"/>
+                        <rect key="frame" x="24" y="4" width="317" height="226"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="車の排気量は" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l02-aP-eqY">
                                 <rect key="frame" x="24" y="22" width="98" height="20"/>
@@ -27,7 +27,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NTh-7O-fdD">
-                                <rect key="frame" x="130" y="16" width="153" height="32"/>
+                                <rect key="frame" x="130" y="16" width="137" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="qY3-m3-iqO"/>
                                 </constraints>
@@ -35,13 +35,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LMm-3a-Ct9">
-                                <rect key="frame" x="260" y="111" width="51" height="31"/>
+                                <rect key="frame" x="244" y="111" width="51" height="31"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q4y-FP-7vR">
-                                <rect key="frame" x="260" y="56" width="51" height="31"/>
+                                <rect key="frame" x="244" y="56" width="51" height="31"/>
                             </switch>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uCs-Vb-bhJ">
-                                <rect key="frame" x="103" y="116.5" width="149" height="20"/>
+                                <rect key="frame" x="87" y="116.5" width="149" height="20"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新規登録から13年" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76K-Eb-EIF">
                                         <rect key="frame" x="0.0" y="0.0" width="133" height="20"/>
@@ -78,28 +78,28 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fD-RP-NVo">
-                                <rect key="frame" x="291" y="28" width="18" height="20"/>
+                                <rect key="frame" x="275" y="28" width="18" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nV7-vC-n3U">
-                                <rect key="frame" x="260" y="166" width="51" height="31"/>
+                                <rect key="frame" x="244" y="166" width="51" height="31"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="軽自動車" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFP-e1-zWi">
-                                <rect key="frame" x="186" y="61.5" width="66" height="20"/>
+                                <rect key="frame" x="170" y="61.5" width="66" height="20"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ハイブリッド車" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdA-dx-cAu">
-                                <rect key="frame" x="137" y="171.5" width="115" height="20"/>
+                                <rect key="frame" x="121.5" y="171.5" width="114.5" height="20"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVs-YF-Onb">
-                                <rect key="frame" x="170" y="67" width="12" height="14.5"/>
+                                <rect key="frame" x="154" y="67" width="12" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -135,9 +135,9 @@
                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                 <constraints>
                     <constraint firstItem="Fi3-aq-yBp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="4ea-X9-iD8"/>
-                    <constraint firstAttribute="trailing" secondItem="Fi3-aq-yBp" secondAttribute="trailing" constant="16" id="LO8-vc-OWR"/>
+                    <constraint firstAttribute="trailing" secondItem="Fi3-aq-yBp" secondAttribute="trailing" constant="24" id="LO8-vc-OWR"/>
                     <constraint firstAttribute="bottom" secondItem="Fi3-aq-yBp" secondAttribute="bottom" id="bfe-5l-3VT"/>
-                    <constraint firstItem="Fi3-aq-yBp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="zDn-PR-wpL"/>
+                    <constraint firstItem="Fi3-aq-yBp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="zDn-PR-wpL"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
