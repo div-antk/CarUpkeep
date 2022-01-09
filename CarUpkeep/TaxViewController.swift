@@ -49,7 +49,7 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
         
         switch indexPath.item {
         case 0:
-            titleCell.titleLabel.text = "自動車税"
+            titleCell.titleLabel.text = "*自動車税"
             titleCell.subtitleLabel.text = ""
             
             return titleCell
@@ -66,12 +66,12 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
                 return UITableViewCell()
             }
             
-            resultCell.tilteLabel.text = "自動車税"
+            resultCell.tilteLabel.text = "*自動車税"
             
             return resultCell
             
         case 3:
-            titleCell.titleLabel.text = "重量税"
+            titleCell.titleLabel.text = "*重量税"
             titleCell.subtitleLabel.text = ""
             
             return titleCell
@@ -88,7 +88,7 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
                 return UITableViewCell()
             }
             
-            resultCell.tilteLabel.text = "重量税"
+            resultCell.tilteLabel.text = "*重量税"
             
             return resultCell
             
