@@ -24,6 +24,8 @@ class InsuranceViewController: UIViewController, StoryboardInstantiatable {
         // カスタムセルを登録
         tableView.register(UINib(nibName: TitleTableViewCell.reusableIdentifier, bundle: nil), forCellReuseIdentifier: TitleTableViewCell.reusableIdentifier)
 
+        tableView.register(UINib(nibName: LiabilityInsuranceTableViewCell.reusableIdentifier, bundle: nil), forCellReuseIdentifier: LiabilityInsuranceTableViewCell.reusableIdentifier)
+
         tableView.register(UINib(nibName: ResultTableViewCell.reusableIdentifier, bundle: nil), forCellReuseIdentifier: ResultTableViewCell.reusableIdentifier)
         
     }
@@ -43,18 +45,18 @@ extension InsuranceViewController: UITableViewDelegate, UITableViewDataSource {
                 return UITableViewCell()
             }
             
-            titleCell.titleLabel.text = "保険"
-            titleCell.subtitleLabel.text = "絶対にかかるお金です💸"
+            titleCell.titleLabel.text = "*自賠責保険"
+            titleCell.subtitleLabel.text = ""
             
             return titleCell
             
         case 1:
-            guard let resultCell = tableView.dequeueReusableCell(withIdentifier: ResultTableViewCell.reusableIdentifier, for: indexPath) as? ResultTableViewCell else {
+            guard let resultCell = tableView.dequeueReusableCell(withIdentifier: LiabilityInsuranceTableViewCell.reusableIdentifier, for: indexPath) as? LiabilityInsuranceTableViewCell else {
                 return UITableViewCell()
             }
            
-            resultCell.tilteLabel.text = "自賠責保険"
-            resultCell.priceLabel.text = "約25,000"
+            resultCell.tilteLabel.text = "*自賠責保険"
+            resultCell.priceLabel.text = "25,000"
             
             return resultCell
             
