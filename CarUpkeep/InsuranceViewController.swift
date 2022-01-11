@@ -34,7 +34,7 @@ class InsuranceViewController: UIViewController, StoryboardInstantiatable {
 extension InsuranceViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -46,7 +46,7 @@ extension InsuranceViewController: UITableViewDelegate, UITableViewDataSource {
             }
             
             titleCell.titleLabel.text = "*自賠責保険"
-            titleCell.subtitleLabel.text = ""
+            titleCell.subtitleLabel.text = "24ヶ月のだいたいの金額です"
             
             return titleCell
             
@@ -60,6 +60,15 @@ extension InsuranceViewController: UITableViewDelegate, UITableViewDataSource {
             
             return resultCell
             
+        case 2:
+            guard let titleCell = tableView.dequeueReusableCell(withIdentifier: TitleTableViewCell.reusableIdentifier, for: indexPath) as? TitleTableViewCell else {
+                return UITableViewCell()
+            }
+            
+            titleCell.titleLabel.text = "*任意保険"
+            titleCell.subtitleLabel.text = ""
+            
+            return titleCell
         default:
             return UITableViewCell()
         }
