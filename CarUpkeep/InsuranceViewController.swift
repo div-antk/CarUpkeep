@@ -25,7 +25,9 @@ class InsuranceViewController: UIViewController, StoryboardInstantiatable {
         tableView.register(UINib(nibName: TitleTableViewCell.reusableIdentifier, bundle: nil), forCellReuseIdentifier: TitleTableViewCell.reusableIdentifier)
 
         tableView.register(UINib(nibName: LiabilityInsuranceTableViewCell.reusableIdentifier, bundle: nil), forCellReuseIdentifier: LiabilityInsuranceTableViewCell.reusableIdentifier)
-
+        
+        tableView.register(UINib(nibName: InsuranceTableViewCell.reusableIdentifier, bundle: nil), forCellReuseIdentifier: InsuranceTableViewCell.reusableIdentifier)
+        
         tableView.register(UINib(nibName: ResultTableViewCell.reusableIdentifier, bundle: nil), forCellReuseIdentifier: ResultTableViewCell.reusableIdentifier)
         
     }
@@ -34,17 +36,17 @@ class InsuranceViewController: UIViewController, StoryboardInstantiatable {
 extension InsuranceViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        guard let titleCell = tableView.dequeueReusableCell(withIdentifier: TitleTableViewCell.reusableIdentifier, for: indexPath) as? TitleTableViewCell else {
+            return UITableViewCell()
+        }
+        
         switch indexPath.item {
         case 0:
-            guard let titleCell = tableView.dequeueReusableCell(withIdentifier: TitleTableViewCell.reusableIdentifier, for: indexPath) as? TitleTableViewCell else {
-                return UITableViewCell()
-            }
-            
             titleCell.titleLabel.text = "*自賠責保険"
             titleCell.subtitleLabel.text = "24ヶ月のだいたいの金額です"
             
@@ -61,14 +63,18 @@ extension InsuranceViewController: UITableViewDelegate, UITableViewDataSource {
             return resultCell
             
         case 2:
-            guard let titleCell = tableView.dequeueReusableCell(withIdentifier: TitleTableViewCell.reusableIdentifier, for: indexPath) as? TitleTableViewCell else {
-                return UITableViewCell()
-            }
-            
             titleCell.titleLabel.text = "*任意保険"
             titleCell.subtitleLabel.text = ""
             
             return titleCell
+        
+        case 3:
+            guard let insuranceCell = tableView.dequeueReusableCell(withIdentifier: InsuranceTableViewCell.reusableIdentifier, for: indexPath) as? InsuranceTableViewCell else {
+                return UITableViewCell()
+            }
+            print("(´・ω・｀)", insuranceCell)
+            return insuranceCell
+            
         default:
             return UITableViewCell()
         }
