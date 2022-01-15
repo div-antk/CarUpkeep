@@ -15,6 +15,9 @@ class CalculationViewController: UIViewController, StoryboardInstantiatable {
         super.viewDidLoad()
         
         initPagingVC()
+        
+        // 領域外タップでキーボードを閉じる
+        setDismissKeyboard()
     }
     
     private func initPagingVC() {

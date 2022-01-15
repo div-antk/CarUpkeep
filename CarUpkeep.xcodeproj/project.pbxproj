@@ -19,6 +19,7 @@
 		3B8FFF6E2781B03E0079E938 /* TaxViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8FFF6D2781B03E0079E938 /* TaxViewController.storyboard */; };
 		3B9560CB278C5F030081CC86 /* LiabilityInsuranceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9560C9278C5F030081CC86 /* LiabilityInsuranceTableViewCell.swift */; };
 		3B9560CC278C5F030081CC86 /* LiabilityInsuranceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9560CA278C5F030081CC86 /* LiabilityInsuranceTableViewCell.xib */; };
+		3B9560CE279300F20081CC86 /* UIViewController+DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9560CD279300F20081CC86 /* UIViewController+DismissKeyboard.swift */; };
 		3B9F18A4277891DC00227123 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F18A2277891DC00227123 /* TitleTableViewCell.swift */; };
 		3B9F18A5277891DC00227123 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F18A3277891DC00227123 /* TitleTableViewCell.xib */; };
 		3B9F18AC277893B800227123 /* AutomobileTaxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F18AA277893B800227123 /* AutomobileTaxTableViewCell.swift */; };
@@ -47,6 +48,7 @@
 		3B8FFF6D2781B03E0079E938 /* TaxViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaxViewController.storyboard; sourceTree = "<group>"; };
 		3B9560C9278C5F030081CC86 /* LiabilityInsuranceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiabilityInsuranceTableViewCell.swift; sourceTree = "<group>"; };
 		3B9560CA278C5F030081CC86 /* LiabilityInsuranceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiabilityInsuranceTableViewCell.xib; sourceTree = "<group>"; };
+		3B9560CD279300F20081CC86 /* UIViewController+DismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+DismissKeyboard.swift"; sourceTree = "<group>"; };
 		3B9F18A2277891DC00227123 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		3B9F18A3277891DC00227123 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		3B9F18AA277893B800227123 /* AutomobileTaxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomobileTaxTableViewCell.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				3B424F9A2774A0B0004CDC57 /* AppDelegate.swift */,
 				3B424F9C2774A0B0004CDC57 /* SceneDelegate.swift */,
+				3B9560CD279300F20081CC86 /* UIViewController+DismissKeyboard.swift */,
 				3B424F9E2774A0B0004CDC57 /* CalculationViewController.swift */,
 				3B424FA02774A0B0004CDC57 /* CalculationViewController.storyboard */,
 				3B8FFF6B2781B0140079E938 /* TaxViewController.swift */,
@@ -280,6 +283,7 @@
 				3B9F18B727789DB400227123 /* WeightTaxTableViewCell.swift in Sources */,
 				3BE568352785B80C00510579 /* InsuranceViewController.swift in Sources */,
 				3B9F18B027789C5300227123 /* ResultTableViewCell.swift in Sources */,
+				3B9560CE279300F20081CC86 /* UIViewController+DismissKeyboard.swift in Sources */,
 				3B424F9D2774A0B0004CDC57 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
