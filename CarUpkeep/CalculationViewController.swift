@@ -22,6 +22,9 @@ class CalculationViewController: UIViewController, StoryboardInstantiatable {
     
     private func initPagingVC() {
        
+        let priceVC = PriceViewController.instantiate()
+        priceVC.title = "車両価格"
+        
         let taxVC = TaxViewController.instantiate()
         taxVC.title = "税金"
        
@@ -29,6 +32,7 @@ class CalculationViewController: UIViewController, StoryboardInstantiatable {
         insuranceVC.title = "保険"
         
         let pagingVC = PagingViewController(viewControllers: [
+            priceVC,
             taxVC,
             insuranceVC
         ])
