@@ -36,7 +36,7 @@ class InsuranceViewController: UIViewController, StoryboardInstantiatable {
 extension InsuranceViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -72,8 +72,16 @@ extension InsuranceViewController: UITableViewDelegate, UITableViewDataSource {
             guard let insuranceCell = tableView.dequeueReusableCell(withIdentifier: InsuranceTableViewCell.reusableIdentifier, for: indexPath) as? InsuranceTableViewCell else {
                 return UITableViewCell()
             }
-            print("(´・ω・｀)", insuranceCell)
+            
             return insuranceCell
+        
+        case 4:
+            guard let resultCell = tableView.dequeueReusableCell(withIdentifier: ResultTableViewCell.reusableIdentifier, for: indexPath) as? ResultTableViewCell else {
+                return UITableViewCell()
+            }
+            resultCell.tilteLabel.text = "*任意保険"
+            
+            return resultCell
             
         default:
             return UITableViewCell()
