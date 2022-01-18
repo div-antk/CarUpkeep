@@ -18,31 +18,31 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kf5-67-D2s">
-                        <rect key="frame" x="16" y="16" width="351" height="213"/>
+                        <rect key="frame" x="24" y="4" width="335" height="213"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gaT-Yb-vIo">
-                                <rect key="frame" x="278" y="16" width="51" height="31"/>
+                                <rect key="frame" x="262" y="16" width="51" height="31"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任意保険を設定する" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZw-Q3-KIf">
-                                <rect key="frame" x="123" y="21.5" width="147" height="20"/>
+                                <rect key="frame" x="107" y="21.5" width="147" height="20"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="※任意保険は補償内容、年齢、事故歴、地域、特約などの条件によって金額も大きく変わるため、本当にざっくりとした平均額として参考にしてください。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Nd-v9-XUZ">
-                                <rect key="frame" x="24" y="55" width="303" height="43"/>
+                                <rect key="frame" x="24" y="55" width="287" height="57.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="万円" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZa-kD-ncI">
-                                <rect key="frame" x="302" y="139" width="25" height="15"/>
+                                <rect key="frame" x="286" y="153.5" width="25" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ0-t9-ODs">
-                                <rect key="frame" x="262" y="122" width="32" height="32"/>
+                                <rect key="frame" x="246" y="136.5" width="32" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="Jg9-lq-nNV"/>
                                 </constraints>
@@ -50,13 +50,13 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年間だいたい" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wr4-2o-kWc">
-                                <rect key="frame" x="156" y="128" width="98" height="20"/>
+                                <rect key="frame" x="140" y="142.5" width="98" height="20"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="だいたい3〜9万円くらいかもしれません" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kau-ti-tIY">
-                                <rect key="frame" x="103" y="162" width="224" height="15"/>
+                                <rect key="frame" x="87" y="176.5" width="224" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -85,10 +85,10 @@
                 </subviews>
                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                 <constraints>
-                    <constraint firstItem="kf5-67-D2s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Dnz-oK-Occ"/>
-                    <constraint firstAttribute="bottom" secondItem="kf5-67-D2s" secondAttribute="bottom" constant="16" id="VMY-Oo-MAj"/>
-                    <constraint firstAttribute="trailing" secondItem="kf5-67-D2s" secondAttribute="trailing" constant="16" id="dKJ-56-y2C"/>
-                    <constraint firstItem="kf5-67-D2s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="odj-qW-1o6"/>
+                    <constraint firstItem="kf5-67-D2s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="Dnz-oK-Occ"/>
+                    <constraint firstAttribute="bottom" secondItem="kf5-67-D2s" secondAttribute="bottom" id="VMY-Oo-MAj"/>
+                    <constraint firstAttribute="trailing" secondItem="kf5-67-D2s" secondAttribute="trailing" constant="24" id="dKJ-56-y2C"/>
+                    <constraint firstItem="kf5-67-D2s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="odj-qW-1o6"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
