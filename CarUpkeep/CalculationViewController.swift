@@ -48,8 +48,10 @@ class CalculationViewController: UIViewController, StoryboardInstantiatable {
         pagingVC.indicatorColor = .white
         pagingVC.backgroundColor = .darkGray
         pagingVC.selectedBackgroundColor = .darkGray
+        pagingVC.menuBackgroundColor = .darkGray
         
         // インジケーターの設定
+        
 //        pagingVC.indicatorOptions = .visible(
 //            height: 4,
 //            zIndex: Int.max,
