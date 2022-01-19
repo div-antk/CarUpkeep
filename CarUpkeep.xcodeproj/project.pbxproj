@@ -22,6 +22,8 @@
 		3B9560CE279300F20081CC86 /* UIViewController+DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9560CD279300F20081CC86 /* UIViewController+DismissKeyboard.swift */; };
 		3B9560D0279466D60081CC86 /* PriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9560CF279466D60081CC86 /* PriceViewController.swift */; };
 		3B9560D2279466EA0081CC86 /* PriceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9560D1279466EA0081CC86 /* PriceViewController.storyboard */; };
+		3B9560D527985C690081CC86 /* PriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9560D327985C690081CC86 /* PriceTableViewCell.swift */; };
+		3B9560D627985C690081CC86 /* PriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9560D427985C690081CC86 /* PriceTableViewCell.xib */; };
 		3B9F18A4277891DC00227123 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F18A2277891DC00227123 /* TitleTableViewCell.swift */; };
 		3B9F18A5277891DC00227123 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F18A3277891DC00227123 /* TitleTableViewCell.xib */; };
 		3B9F18AC277893B800227123 /* AutomobileTaxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F18AA277893B800227123 /* AutomobileTaxTableViewCell.swift */; };
@@ -53,6 +55,8 @@
 		3B9560CD279300F20081CC86 /* UIViewController+DismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+DismissKeyboard.swift"; sourceTree = "<group>"; };
 		3B9560CF279466D60081CC86 /* PriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceViewController.swift; sourceTree = "<group>"; };
 		3B9560D1279466EA0081CC86 /* PriceViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PriceViewController.storyboard; sourceTree = "<group>"; };
+		3B9560D327985C690081CC86 /* PriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTableViewCell.swift; sourceTree = "<group>"; };
+		3B9560D427985C690081CC86 /* PriceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceTableViewCell.xib; sourceTree = "<group>"; };
 		3B9F18A2277891DC00227123 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		3B9F18A3277891DC00227123 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		3B9F18AA277893B800227123 /* AutomobileTaxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomobileTaxTableViewCell.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 		3B4E3AF8277F11E100D06785 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				3B9560D327985C690081CC86 /* PriceTableViewCell.swift */,
+				3B9560D427985C690081CC86 /* PriceTableViewCell.xib */,
 				3B9F18A2277891DC00227123 /* TitleTableViewCell.swift */,
 				3B9F18A3277891DC00227123 /* TitleTableViewCell.xib */,
 				3B9F18AA277893B800227123 /* AutomobileTaxTableViewCell.swift */,
@@ -223,6 +229,7 @@
 				3B9F18B127789C5300227123 /* ResultTableViewCell.xib in Resources */,
 				3B424FA72774A0B7004CDC57 /* LaunchScreen.storyboard in Resources */,
 				3B424FA42774A0B7004CDC57 /* Assets.xcassets in Resources */,
+				3B9560D627985C690081CC86 /* PriceTableViewCell.xib in Resources */,
 				3B9560D2279466EA0081CC86 /* PriceViewController.storyboard in Resources */,
 				3B424FA22774A0B0004CDC57 /* CalculationViewController.storyboard in Resources */,
 				3B4E3AF7277DF69100D06785 /* InsuranceTableViewCell.xib in Resources */,
@@ -291,6 +298,7 @@
 				3B9F18B727789DB400227123 /* WeightTaxTableViewCell.swift in Sources */,
 				3BE568352785B80C00510579 /* InsuranceViewController.swift in Sources */,
 				3B9F18B027789C5300227123 /* ResultTableViewCell.swift in Sources */,
+				3B9560D527985C690081CC86 /* PriceTableViewCell.swift in Sources */,
 				3B9560CE279300F20081CC86 /* UIViewController+DismissKeyboard.swift in Sources */,
 				3B424F9D2774A0B0004CDC57 /* SceneDelegate.swift in Sources */,
 			);
