@@ -12,6 +12,9 @@ import InstantiateStandard
 class PriceTableViewCell: UITableViewCell, Reusable {
 
     @IBOutlet weak var bgLayerView: UIView!
+    @IBOutlet weak var priceTextField: UITextField!
+    @IBOutlet weak var installmentsTextField: UITextField!
+    @IBOutlet weak var interestTextField: UITextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,7 +26,6 @@ class PriceTableViewCell: UITableViewCell, Reusable {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
 }
