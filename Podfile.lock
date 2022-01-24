@@ -2,24 +2,28 @@ PODS:
   - Instantiate (4.0.0)
   - InstantiateStandard (4.0.0):
     - Instantiate (~> 4.0)
+  - IQKeyboardManagerSwift (6.5.6)
   - Parchment (3.1.0)
 
 DEPENDENCIES:
   - Instantiate
   - InstantiateStandard
+  - IQKeyboardManagerSwift
   - Parchment
 
 SPEC REPOS:
   trunk:
     - Instantiate
     - InstantiateStandard
+    - IQKeyboardManagerSwift
     - Parchment
 
 SPEC CHECKSUMS:
   Instantiate: 62516e7dde448721c1f5815a9ee7e0669d034d52
   InstantiateStandard: 18ab1417ba787113350c71a5b2251f0b4448be67
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Parchment: 6250722ed0456d68f6bae03118eda722a28486f3
 
-PODFILE CHECKSUM: 024f0e7e489969bbbbe15751885aeac70915d314
+PODFILE CHECKSUM: de4afce22c5ef621ac446c733e9cc2b34b2c33f1
 
 COCOAPODS: 1.11.2
