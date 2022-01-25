@@ -12,6 +12,11 @@ import InstantiateStandard
 class AutomobileTaxTableViewCell: UITableViewCell, Reusable {
 
     @IBOutlet weak var bgLayerView: UIView!
+    @IBOutlet weak var displacementTextView: NSLayoutConstraint!
+    
+    @IBOutlet weak var keiCarSwitch: UISwitch!
+    @IBOutlet weak var thirteenSwitch: UISwitch!
+    @IBOutlet weak var hybridCarSwitch: UISwitch!
     
     override func awakeFromNib() {
         super.awakeFromNib()

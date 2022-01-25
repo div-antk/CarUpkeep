@@ -26,13 +26,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NTh-7O-fdD">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NTh-7O-fdD">
                                 <rect key="frame" x="130" y="16" width="137" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="qY3-m3-iqO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LMm-3a-Ct9">
                                 <rect key="frame" x="244" y="111" width="51" height="31"/>
@@ -143,6 +143,10 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="bgLayerView" destination="Fi3-aq-yBp" id="uMS-FS-a6Q"/>
+                <outlet property="displacementTextView" destination="Ejg-6o-Ncf" id="INR-vw-idP"/>
+                <outlet property="hybridCarSwitch" destination="nV7-vC-n3U" id="PvX-gw-BLk"/>
+                <outlet property="keiCarSwitch" destination="q4y-FP-7vR" id="ezh-9c-U1D"/>
+                <outlet property="thirteenSwitch" destination="LMm-3a-Ct9" id="vbV-TY-gEy"/>
             </connections>
             <point key="canvasLocation" x="13.768115942028986" y="-105.13392857142857"/>
         </tableViewCell>
