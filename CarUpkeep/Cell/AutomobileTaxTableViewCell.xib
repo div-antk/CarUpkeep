@@ -36,9 +36,15 @@
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LMm-3a-Ct9">
                                 <rect key="frame" x="244" y="111" width="51" height="31"/>
+                                <connections>
+                                    <action selector="thirteenSwitch:" destination="KGk-i7-Jjw" eventType="valueChanged" id="bWZ-9e-37Q"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q4y-FP-7vR">
                                 <rect key="frame" x="244" y="56" width="51" height="31"/>
+                                <connections>
+                                    <action selector="keiCarSwitch:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Uo4-Xa-WBj"/>
+                                </connections>
                             </switch>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uCs-Vb-bhJ">
                                 <rect key="frame" x="87" y="116.5" width="149" height="20"/>
@@ -85,6 +91,9 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nV7-vC-n3U">
                                 <rect key="frame" x="244" y="166" width="51" height="31"/>
+                                <connections>
+                                    <action selector="hybridCarSwitch:" destination="KGk-i7-Jjw" eventType="valueChanged" id="swd-6C-qCq"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="軽自動車" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFP-e1-zWi">
                                 <rect key="frame" x="170" y="61.5" width="66" height="20"/>
@@ -145,7 +154,7 @@
                 <outlet property="bgLayerView" destination="Fi3-aq-yBp" id="uMS-FS-a6Q"/>
                 <outlet property="displacementTextView" destination="Ejg-6o-Ncf" id="INR-vw-idP"/>
                 <outlet property="hybridCarSwitch" destination="nV7-vC-n3U" id="PvX-gw-BLk"/>
-                <outlet property="keiCarSwitch" destination="q4y-FP-7vR" id="ezh-9c-U1D"/>
+                <outlet property="keiCarSwitch" destination="8Zk-ud-W7H" id="iMl-MW-YC5"/>
                 <outlet property="thirteenSwitch" destination="LMm-3a-Ct9" id="vbV-TY-gEy"/>
             </connections>
             <point key="canvasLocation" x="13.768115942028986" y="-105.13392857142857"/>

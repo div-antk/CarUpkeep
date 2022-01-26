@@ -24,7 +24,17 @@ class AutomobileTaxTableViewCell: UITableViewCell, Reusable {
         bgLayerView.layer.borderWidth = 2
         bgLayerView.layer.borderColor = UIColor.white.cgColor
     }
-
+    
+    @IBAction func keiCarSwitch(_ sender: UISwitch) {
+        
+    }
+    
+    @IBAction func thirteenSwitch(_ sender: UISwitch) {
+    }
+    
+    @IBAction func hybridCarSwitch(_ sender: UISwitch) {
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
