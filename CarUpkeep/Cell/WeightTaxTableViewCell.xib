@@ -38,7 +38,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9l9-og-68i">
                                 <rect key="frame" x="199" y="205" width="51" height="31"/>
                             </switch>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qkw-Dr-nHj">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qkw-Dr-nHj">
                                 <rect key="frame" x="114" y="16" width="101" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="2GE-zT-EZG"/>
@@ -164,6 +164,11 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="bgLayerView" destination="nHB-IX-SVh" id="MJb-a9-H4a"/>
+                <outlet property="eighteenSwitch" destination="lOr-1T-Vyw" id="cVK-0O-9EK"/>
+                <outlet property="hybridCarSwitch" destination="9l9-og-68i" id="sUT-T4-RvA"/>
+                <outlet property="keiCarSwitch" destination="Uc6-3O-vhE" id="cs5-tT-lI0"/>
+                <outlet property="thirteenSwitch" destination="BXO-FG-MW1" id="ZOC-0f-HQy"/>
+                <outlet property="weightTextField" destination="Qkw-Dr-nHj" id="4LK-gV-S1t"/>
             </connections>
             <point key="canvasLocation" x="247.82608695652175" y="50.892857142857139"/>
         </tableViewCell>

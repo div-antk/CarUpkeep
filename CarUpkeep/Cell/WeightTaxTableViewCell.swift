@@ -12,6 +12,11 @@ import InstantiateStandard
 class WeightTaxTableViewCell: UITableViewCell, Reusable {
 
     @IBOutlet weak var bgLayerView: UIView!
+    @IBOutlet weak var weightTextField: UITextField!
+    @IBOutlet weak var keiCarSwitch: UISwitch!
+    @IBOutlet weak var thirteenSwitch: UISwitch!
+    @IBOutlet weak var eighteenSwitch: UISwitch!
+    @IBOutlet weak var hybridCarSwitch: UISwitch!
     
     override func awakeFromNib() {
         super.awakeFromNib()
