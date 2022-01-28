@@ -25,6 +25,27 @@ class WeightTaxTableViewCell: UITableViewCell, Reusable {
         bgLayerView.layer.borderColor = UIColor.white.cgColor
     }
 
+    @IBAction func keiCarSwitch(_ sender: UISwitch) {
+        
+    }
+    
+    @IBAction func thirteenSwitch(_ sender: UISwitch) {
+        
+        if sender.isOn {
+            eighteenSwitch.isOn = false
+        }
+    }
+    
+    @IBAction func eighteenSwitch(_ sender: UISwitch) {
+        
+        if sender.isOn {
+            thirteenSwitch.isOn = false
+        }
+    }
+    
+    @IBAction func hybridCarSwitch(_ sender: UISwitch) {
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

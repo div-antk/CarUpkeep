@@ -34,9 +34,15 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BXO-FG-MW1">
                                 <rect key="frame" x="199" y="111" width="51" height="31"/>
+                                <connections>
+                                    <action selector="thirteenSwitch:" destination="KGk-i7-Jjw" eventType="valueChanged" id="GbZ-FL-Fld"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9l9-og-68i">
                                 <rect key="frame" x="199" y="205" width="51" height="31"/>
+                                <connections>
+                                    <action selector="hybridCarSwitch:" destination="KGk-i7-Jjw" eventType="valueChanged" id="5dG-UX-GOm"/>
+                                </connections>
                             </switch>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qkw-Dr-nHj">
                                 <rect key="frame" x="114" y="16" width="101" height="32"/>
@@ -60,6 +66,9 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Uc6-3O-vhE">
                                 <rect key="frame" x="199" y="56" width="51" height="31"/>
+                                <connections>
+                                    <action selector="keiCarSwitch:" destination="KGk-i7-Jjw" eventType="valueChanged" id="aw6-bU-pdG"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8j-ia-AEN">
                                 <rect key="frame" x="109" y="67" width="12" height="14.5"/>
@@ -69,6 +78,9 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lOr-1T-Vyw">
                                 <rect key="frame" x="199" y="150" width="51" height="31"/>
+                                <connections>
+                                    <action selector="eighteenSwitch:" destination="KGk-i7-Jjw" eventType="valueChanged" id="EGg-4P-Jdl"/>
+                                </connections>
                             </switch>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4T-b1-qiM">
                                 <rect key="frame" x="42" y="116.5" width="149" height="20"/>
