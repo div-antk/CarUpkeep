@@ -25,6 +25,14 @@ class WeightTaxTableViewCell: UITableViewCell, Reusable {
         bgLayerView.layer.borderColor = UIColor.white.cgColor
     }
 
+    @IBAction func weightTextField(_ sender: UITextField) {
+        
+        if sender.text!.count > 0 {
+            keiCarSwitch.isOn = false
+            sender.backgroundColor = .white
+        }
+    }
+    
     @IBAction func keiCarSwitch(_ sender: UISwitch) {
         if sender.isOn {
             weightTextField.text = ""
