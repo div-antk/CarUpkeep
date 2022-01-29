@@ -26,18 +26,21 @@ class WeightTaxTableViewCell: UITableViewCell, Reusable {
     }
 
     @IBAction func keiCarSwitch(_ sender: UISwitch) {
-        
+        if sender.isOn {
+            weightTextField.text = ""
+            weightTextField.backgroundColor = .orange
+        } else {
+            weightTextField.backgroundColor = .white
+        }
     }
     
     @IBAction func thirteenSwitch(_ sender: UISwitch) {
-        
         if sender.isOn {
             eighteenSwitch.isOn = false
         }
     }
     
     @IBAction func eighteenSwitch(_ sender: UISwitch) {
-        
         if sender.isOn {
             thirteenSwitch.isOn = false
         }
