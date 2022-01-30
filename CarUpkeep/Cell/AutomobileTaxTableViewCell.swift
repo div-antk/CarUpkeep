@@ -12,8 +12,7 @@ import InstantiateStandard
 class AutomobileTaxTableViewCell: UITableViewCell, Reusable {
 
     @IBOutlet weak var bgLayerView: UIView!
-    @IBOutlet weak var displacementTextView: NSLayoutConstraint!
-    
+    @IBOutlet weak var displacementTextField: UITextField!
     @IBOutlet weak var keiCarSwitch: UISwitch!
     @IBOutlet weak var thirteenSwitch: UISwitch!
     @IBOutlet weak var hybridCarSwitch: UISwitch!
@@ -25,8 +24,22 @@ class AutomobileTaxTableViewCell: UITableViewCell, Reusable {
         bgLayerView.layer.borderColor = UIColor.white.cgColor
     }
     
+    @IBAction func displacementTextField(_ sender: UITextField) {
+   
+        if sender.text!.count > 0 {
+            keiCarSwitch.isOn = false
+            sender.backgroundColor = .white
+        }
+    }
+    
     @IBAction func keiCarSwitch(_ sender: UISwitch) {
         
+        if sender.isOn {
+            displacementTextField.text = ""
+            displacementTextField.backgroundColor = .orange
+        } else {
+            displacementTextField.backgroundColor = .white
+        }
     }
     
     @IBAction func thirteenSwitch(_ sender: UISwitch) {
