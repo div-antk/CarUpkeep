@@ -32,6 +32,7 @@
 		3B9F18B127789C5300227123 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F18AF27789C5300227123 /* ResultTableViewCell.xib */; };
 		3B9F18B727789DB400227123 /* WeightTaxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F18B527789DB400227123 /* WeightTaxTableViewCell.swift */; };
 		3B9F18B827789DB400227123 /* WeightTaxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F18B627789DB400227123 /* WeightTaxTableViewCell.xib */; };
+		3BC788E227AAC73E003172FD /* UITextField+TextToInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC788E127AAC73E003172FD /* UITextField+TextToInt.swift */; };
 		3BE568352785B80C00510579 /* InsuranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE568342785B80C00510579 /* InsuranceViewController.swift */; };
 		3BE568372785B81C00510579 /* InsuranceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE568362785B81C00510579 /* InsuranceViewController.storyboard */; };
 		C7E7B7C0F9B4896350444EA1 /* Pods_CarUpkeep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16896EC2DA68AA5BE1CA5B4 /* Pods_CarUpkeep.framework */; };
@@ -65,6 +66,7 @@
 		3B9F18AF27789C5300227123 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
 		3B9F18B527789DB400227123 /* WeightTaxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightTaxTableViewCell.swift; sourceTree = "<group>"; };
 		3B9F18B627789DB400227123 /* WeightTaxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeightTaxTableViewCell.xib; sourceTree = "<group>"; };
+		3BC788E127AAC73E003172FD /* UITextField+TextToInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+TextToInt.swift"; sourceTree = "<group>"; };
 		3BE568342785B80C00510579 /* InsuranceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceViewController.swift; sourceTree = "<group>"; };
 		3BE568362785B81C00510579 /* InsuranceViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InsuranceViewController.storyboard; sourceTree = "<group>"; };
 		4FF455297008D3DE71AB66FF /* Pods-CarUpkeep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarUpkeep.release.xcconfig"; path = "Target Support Files/Pods-CarUpkeep/Pods-CarUpkeep.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				3B424F9A2774A0B0004CDC57 /* AppDelegate.swift */,
 				3B424F9C2774A0B0004CDC57 /* SceneDelegate.swift */,
 				3B9560CD279300F20081CC86 /* UIViewController+DismissKeyboard.swift */,
+				3BC788E127AAC73E003172FD /* UITextField+TextToInt.swift */,
 				3B424F9E2774A0B0004CDC57 /* CalculationViewController.swift */,
 				3B424FA02774A0B0004CDC57 /* CalculationViewController.storyboard */,
 				3B9560CF279466D60081CC86 /* PriceViewController.swift */,
@@ -294,6 +297,7 @@
 				3B9560CB278C5F030081CC86 /* LiabilityInsuranceTableViewCell.swift in Sources */,
 				3B424F9B2774A0B0004CDC57 /* AppDelegate.swift in Sources */,
 				3B9560D0279466D60081CC86 /* PriceViewController.swift in Sources */,
+				3BC788E227AAC73E003172FD /* UITextField+TextToInt.swift in Sources */,
 				3B8FFF6C2781B0150079E938 /* TaxViewController.swift in Sources */,
 				3B9F18B727789DB400227123 /* WeightTaxTableViewCell.swift in Sources */,
 				3BE568352785B80C00510579 /* InsuranceViewController.swift in Sources */,
