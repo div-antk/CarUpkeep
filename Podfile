@@ -10,4 +10,6 @@ target 'CarUpkeep' do
   pod 'InstantiateStandard'
   pod 'Parchment'
   pod 'IQKeyboardManagerSwift'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 end
