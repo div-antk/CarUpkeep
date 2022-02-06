@@ -32,6 +32,7 @@
 		3B9F18B127789C5300227123 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F18AF27789C5300227123 /* ResultTableViewCell.xib */; };
 		3B9F18B727789DB400227123 /* WeightTaxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F18B527789DB400227123 /* WeightTaxTableViewCell.swift */; };
 		3B9F18B827789DB400227123 /* WeightTaxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F18B627789DB400227123 /* WeightTaxTableViewCell.xib */; };
+		3BAEC7B927AFEB6C00CA4FCA /* PriceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAEC7B827AFEB6C00CA4FCA /* PriceViewModel.swift */; };
 		3BC788E227AAC73E003172FD /* UITextField+TextToInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC788E127AAC73E003172FD /* UITextField+TextToInt.swift */; };
 		3BE568352785B80C00510579 /* InsuranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE568342785B80C00510579 /* InsuranceViewController.swift */; };
 		3BE568372785B81C00510579 /* InsuranceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE568362785B81C00510579 /* InsuranceViewController.storyboard */; };
@@ -66,6 +67,7 @@
 		3B9F18AF27789C5300227123 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
 		3B9F18B527789DB400227123 /* WeightTaxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightTaxTableViewCell.swift; sourceTree = "<group>"; };
 		3B9F18B627789DB400227123 /* WeightTaxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeightTaxTableViewCell.xib; sourceTree = "<group>"; };
+		3BAEC7B827AFEB6C00CA4FCA /* PriceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceViewModel.swift; sourceTree = "<group>"; };
 		3BC788E127AAC73E003172FD /* UITextField+TextToInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+TextToInt.swift"; sourceTree = "<group>"; };
 		3BE568342785B80C00510579 /* InsuranceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceViewController.swift; sourceTree = "<group>"; };
 		3BE568362785B81C00510579 /* InsuranceViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InsuranceViewController.storyboard; sourceTree = "<group>"; };
@@ -111,15 +113,8 @@
 				3B424F9C2774A0B0004CDC57 /* SceneDelegate.swift */,
 				3B9560CD279300F20081CC86 /* UIViewController+DismissKeyboard.swift */,
 				3BC788E127AAC73E003172FD /* UITextField+TextToInt.swift */,
-				3B424F9E2774A0B0004CDC57 /* CalculationViewController.swift */,
-				3B424FA02774A0B0004CDC57 /* CalculationViewController.storyboard */,
-				3B9560CF279466D60081CC86 /* PriceViewController.swift */,
-				3B9560D1279466EA0081CC86 /* PriceViewController.storyboard */,
-				3B8FFF6B2781B0140079E938 /* TaxViewController.swift */,
-				3B8FFF6D2781B03E0079E938 /* TaxViewController.storyboard */,
-				3BE568342785B80C00510579 /* InsuranceViewController.swift */,
-				3BE568362785B81C00510579 /* InsuranceViewController.storyboard */,
-				3B4E3AF8277F11E100D06785 /* Cell */,
+				3BAEC7BB27AFEEFA00CA4FCA /* View */,
+				3BAEC7BA27AFEEDA00CA4FCA /* ViewModel */,
 				3B424FA32774A0B7004CDC57 /* Assets.xcassets */,
 				3B424FA52774A0B7004CDC57 /* LaunchScreen.storyboard */,
 				3B424FA82774A0B7004CDC57 /* Info.plist */,
@@ -146,6 +141,30 @@
 				3B9560CA278C5F030081CC86 /* LiabilityInsuranceTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		3BAEC7BA27AFEEDA00CA4FCA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BAEC7B827AFEB6C00CA4FCA /* PriceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3BAEC7BB27AFEEFA00CA4FCA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B424F9E2774A0B0004CDC57 /* CalculationViewController.swift */,
+				3B424FA02774A0B0004CDC57 /* CalculationViewController.storyboard */,
+				3B9560CF279466D60081CC86 /* PriceViewController.swift */,
+				3B9560D1279466EA0081CC86 /* PriceViewController.storyboard */,
+				3B8FFF6B2781B0140079E938 /* TaxViewController.swift */,
+				3B8FFF6D2781B03E0079E938 /* TaxViewController.storyboard */,
+				3BE568342785B80C00510579 /* InsuranceViewController.swift */,
+				3BE568362785B81C00510579 /* InsuranceViewController.storyboard */,
+				3B4E3AF8277F11E100D06785 /* Cell */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		5457DE42B5127B0F6E0D0076 /* Frameworks */ = {
@@ -290,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BAEC7B927AFEB6C00CA4FCA /* PriceViewModel.swift in Sources */,
 				3B9F18A4277891DC00227123 /* TitleTableViewCell.swift in Sources */,
 				3B9F18AC277893B800227123 /* AutomobileTaxTableViewCell.swift in Sources */,
 				3B4E3AF6277DF69100D06785 /* InsuranceTableViewCell.swift in Sources */,
