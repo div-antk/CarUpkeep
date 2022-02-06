@@ -7,10 +7,13 @@
 
 import UIKit
 import Instantiate
+import RxSwift
+import RxCocoa
 
 class PriceViewController: UIViewController, StoryboardInstantiatable {
 
     @IBOutlet weak var tableView: UITableView!
+    var result: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +58,14 @@ extension PriceViewController: UITableViewDelegate, UITableViewDataSource {
                 return UITableViewCell()
             }
             
+            
+            print(priceCell.price)
+//            self.result = priceCalc(
+//                price: price ?? 0,
+//                installments: installments ?? 0,
+//                interest: interest ?? 0
+//            )
+            
             return priceCell
             
         case 2:
@@ -63,11 +74,18 @@ extension PriceViewController: UITableViewDelegate, UITableViewDataSource {
             }
             
             resultCell.tilteLabel.text = "*ローン"
+            resultCell.priceLabel.text = String(result)
             
             return resultCell
             
         default:
             return UITableViewCell()
         }
+    }
+    
+    
+    func priceCalc(price: Int, installments: Int, interest: Int) -> String {
+        let result = String(price / 24)
+        return result
     }
 }
