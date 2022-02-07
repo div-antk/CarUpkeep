@@ -13,7 +13,11 @@ import RxCocoa
 class PriceViewController: UIViewController, StoryboardInstantiatable {
 
     @IBOutlet weak var tableView: UITableView!
+    
     var result: Int = 0
+    
+    private let viewModel = PriceViewModel()
+    private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,13 +62,12 @@ extension PriceViewController: UITableViewDelegate, UITableViewDataSource {
                 return UITableViewCell()
             }
             
-            
-            print(priceCell.price)
-//            self.result = priceCalc(
-//                price: price ?? 0,
-//                installments: installments ?? 0,
-//                interest: interest ?? 0
-//            )
+            priceCell.priceTextField.rx.text.orEmpty
+                .asObservable()
+                .subscribe { [weak self] in
+                    // ViewModelで処理
+                }.disposed(by: disposeBag)
+
             
             return priceCell
             
