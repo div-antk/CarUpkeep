@@ -13,9 +13,7 @@ import RxCocoa
 
 // VCから受ける
 protocol PriceViewModelInputs {
-    var price: AnyObserver<String> { get }
-    var installments: AnyObserver<String> { get }
-    var interest: AnyObserver<String> { get }
+    func priceCulc(pirce: String, installments: String, interst: String)
 }
 
 // VCに送る
@@ -28,13 +26,7 @@ protocol PriceViewModelType {
     var outputs: PriceViewModelOutputs { get }
 }
 
-class PriceViewModel: PriceViewModelInputs, PriceViewModelOutputs {
-    
-
-    // MARK: - input
-    var price: AnyObserver<String>
-    var installments: AnyObserver<String>
-    var interest: AnyObserver<String>
+class PriceViewModel: PriceViewModelOutputs {
     
     // MARK: - output
     var result: Observable<Int>
@@ -47,29 +39,14 @@ class PriceViewModel: PriceViewModelInputs, PriceViewModelOutputs {
     init() {
         let _result = PublishRelay<Int>()
         self.result = _result.asObservable()
-//
-//        // すべての記事を取得（Moya）
-//        ArticleRepository.getArticles()
-//            .subscribe(onNext: { response in
-//                _articles.accept(response)
-//            })
-//            .disposed(by: disposeBag)
 
-        
-        let _price = PublishRelay<String>()
-        let _installments = PublishRelay<String>()
-        let _interest = PublishRelay<String>()
+    }
+    
+}
 
-//        self.price = AnyObserver<String>()
-//        self.installments = AnyObserver<String>()
-//        self.interest = AnyObserver<String>()
-        
-//        let _searchWord = PublishRelay<String>()
-//        self.searchWord = AnyObserver<String> { event in
-//            guard let text = event.element else { return }
-//            _searchWord.accept(text)
-//        }
-
+extension PriceViewModel: PriceViewModelInputs {
+    func priceCulc(pirce: String, installments: String, interst: String) {
+        //
     }
 }
 
