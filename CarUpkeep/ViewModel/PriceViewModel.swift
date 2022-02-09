@@ -13,7 +13,7 @@ import RxCocoa
 
 // VCから受ける
 protocol PriceViewModelInputs {
-    func priceCulc(pirce: String, installments: String, interst: String)
+    var price: AnyObserver<String> { get }
 }
 
 // VCに送る
@@ -26,7 +26,10 @@ protocol PriceViewModelType {
     var outputs: PriceViewModelOutputs { get }
 }
 
-class PriceViewModel: PriceViewModelOutputs {
+class PriceViewModel: PriceViewModelInputs, PriceViewModelOutputs {
+    
+    // MARK: - input
+    var price: AnyObserver<String>
     
     // MARK: - output
     var result: Observable<Int>
@@ -37,17 +40,17 @@ class PriceViewModel: PriceViewModelOutputs {
     // classのプロパティの初期値を設定する
     // このクラスのインスタンスを生成する際に自動で呼び出される
     init() {
+        let _price = PublishRelay<String>()
+        self.price = AnyObserver<String> { event in
+            guard let priceString = event.element else { return }
+            _price.accept(priceString)
+        }
+        
         let _result = PublishRelay<Int>()
         self.result = _result.asObservable()
 
     }
     
-}
-
-extension PriceViewModel: PriceViewModelInputs {
-    func priceCulc(pirce: String, installments: String, interst: String) {
-        //
-    }
 }
 
 extension PriceViewModel: PriceViewModelType {
