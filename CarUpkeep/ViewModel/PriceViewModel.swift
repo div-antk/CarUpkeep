@@ -52,7 +52,8 @@ class PriceViewModel: PriceViewModelInputs, PriceViewModelOutputs {
         _price
             .debounce(RxTimeInterval.seconds(1), scheduler: MainScheduler.instance)
             .flatMap { priceString in
-                priceString / 24
+//                priceString / 24
+                priceCalc(priceString: priceString)
             }
             .subscribe(onNext: { result in
                 _result.accept(result)
@@ -71,6 +72,7 @@ class PriceViewModel: PriceViewModelInputs, PriceViewModelOutputs {
 //            .disposed(by: disposeBag)
 
     }
+    
     func priceCalc(priceString: String) -> Int {
         let price = Int(priceString) ?? 0
         return price / 12
