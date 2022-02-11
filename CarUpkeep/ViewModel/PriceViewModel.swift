@@ -69,11 +69,12 @@ class PriceViewModel: PriceViewModelInputs, PriceViewModelOutputs {
 //                _articles.accept(response)
 //            })
 //            .disposed(by: disposeBag)
-        
-
 
     }
-    
+    func priceCalc(priceString: String) -> Int {
+        let price = Int(priceString) ?? 0
+        return price / 12
+    }
 }
 
 extension PriceViewModel: PriceViewModelType {
