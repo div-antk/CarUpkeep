@@ -18,8 +18,8 @@ class ResultTableViewCell: UITableViewCell, Reusable {
     override func awakeFromNib() {
         super.awakeFromNib()
        
-        bgLayerView.layer.borderWidth = 2
-        bgLayerView.layer.borderColor = UIColor.white.cgColor
+//        bgLayerView.layer.borderWidth = 2
+//        bgLayerView.layer.borderColor = UIColor.white.cgColor
     }
 
     @IBAction func bgButton(_ sender: UIButton) {

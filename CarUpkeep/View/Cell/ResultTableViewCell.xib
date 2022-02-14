@@ -17,8 +17,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="397" height="76"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9NP-lb-UUQ">
+                        <rect key="frame" x="24" y="12" width="349" height="48"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="trk-Sa-Eo5"/>
+                        </constraints>
+                    </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DIE-6b-wdN">
-                        <rect key="frame" x="24" y="-2" width="349" height="48"/>
+                        <rect key="frame" x="16" y="4" width="349" height="48"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuW-Ty-2Jj">
                                 <rect key="frame" x="240" y="12" width="53" height="24"/>
@@ -65,15 +72,17 @@
                 </subviews>
                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="DIE-6b-wdN" secondAttribute="trailing" constant="24" id="AlY-X3-v4m"/>
-                    <constraint firstItem="DIE-6b-wdN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="-2" id="EUx-4t-1Cr"/>
-                    <constraint firstItem="DIE-6b-wdN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="LVa-gD-LQg"/>
+                    <constraint firstItem="9NP-lb-UUQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="11F-Ia-uUK"/>
+                    <constraint firstAttribute="trailing" secondItem="DIE-6b-wdN" secondAttribute="trailing" constant="32" id="AlY-X3-v4m"/>
+                    <constraint firstItem="DIE-6b-wdN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="EUx-4t-1Cr"/>
+                    <constraint firstItem="9NP-lb-UUQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="KAD-5a-Wgo"/>
+                    <constraint firstItem="DIE-6b-wdN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="LVa-gD-LQg"/>
                     <constraint firstAttribute="bottom" secondItem="DIE-6b-wdN" secondAttribute="bottom" constant="32" id="ZcR-Rg-ZxC"/>
+                    <constraint firstAttribute="trailing" secondItem="9NP-lb-UUQ" secondAttribute="trailing" constant="24" id="o6c-iZ-PyQ"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="bgButton" destination="wOI-6a-2Lb" id="EGv-YP-evN"/>
                 <outlet property="bgLayerView" destination="DIE-6b-wdN" id="gwO-wT-ro1"/>
                 <outlet property="priceLabel" destination="n5q-5t-uRI" id="7dA-VV-ouc"/>
                 <outlet property="tilteLabel" destination="KuW-Ty-2Jj" id="W4c-RY-7Jh"/>
