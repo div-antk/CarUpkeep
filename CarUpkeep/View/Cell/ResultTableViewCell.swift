@@ -22,17 +22,21 @@ class ResultTableViewCell: UITableViewCell, Reusable {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-       
-//        bgLayerView.layer.borderWidth = 2
-//        bgLayerView.layer.borderColor = UIColor.white.cgColor
+    
     }
-
+    
     @IBAction func bgButton(_ sender: UIButton) {
         
         bgViewTopMargin.constant = 12
         bgViewLeftMargin.constant = 24
         bgViewRightMargin.constant = 24
+    }
+    
+    @IBAction func bgButtonTouchUpInside(_ sender: UIButton) {
         
+        bgViewTopMargin.constant = 4
+        bgViewLeftMargin.constant = 16
+        bgViewRightMargin.constant = 32
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

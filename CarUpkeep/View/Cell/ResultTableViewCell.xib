@@ -54,7 +54,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <action selector="bgButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gHI-RW-ZSn"/>
+                                    <action selector="bgButton:" destination="KGk-i7-Jjw" eventType="touchDown" id="Mck-y0-Jik"/>
+                                    <action selector="bgButtonTouchUpInside:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="00g-sv-UZG"/>
                                 </connections>
                             </button>
                         </subviews>
