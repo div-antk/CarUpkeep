@@ -15,6 +15,11 @@ class ResultTableViewCell: UITableViewCell, Reusable {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var bgLayerView: UIView!
     
+    @IBOutlet weak var bgViewTopMargin: NSLayoutConstraint!
+    @IBOutlet weak var bgViewLeftMargin: NSLayoutConstraint!
+    @IBOutlet weak var bgViewRightMargin: NSLayoutConstraint!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
        
@@ -23,6 +28,10 @@ class ResultTableViewCell: UITableViewCell, Reusable {
     }
 
     @IBAction func bgButton(_ sender: UIButton) {
+        
+        bgViewTopMargin.constant = 12
+        bgViewLeftMargin.constant = 24
+        bgViewRightMargin.constant = 24
         
     }
     

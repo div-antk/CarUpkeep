@@ -73,17 +73,20 @@
                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                 <constraints>
                     <constraint firstItem="9NP-lb-UUQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="11F-Ia-uUK"/>
+                    <constraint firstAttribute="bottom" secondItem="9NP-lb-UUQ" secondAttribute="bottom" constant="32" id="9z9-8G-GgL"/>
                     <constraint firstAttribute="trailing" secondItem="DIE-6b-wdN" secondAttribute="trailing" constant="32" id="AlY-X3-v4m"/>
                     <constraint firstItem="DIE-6b-wdN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="EUx-4t-1Cr"/>
                     <constraint firstItem="9NP-lb-UUQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="KAD-5a-Wgo"/>
                     <constraint firstItem="DIE-6b-wdN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="LVa-gD-LQg"/>
-                    <constraint firstAttribute="bottom" secondItem="DIE-6b-wdN" secondAttribute="bottom" constant="32" id="ZcR-Rg-ZxC"/>
                     <constraint firstAttribute="trailing" secondItem="9NP-lb-UUQ" secondAttribute="trailing" constant="24" id="o6c-iZ-PyQ"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="bgLayerView" destination="DIE-6b-wdN" id="gwO-wT-ro1"/>
+                <outlet property="bgViewLeftMargin" destination="LVa-gD-LQg" id="HTr-vr-DK7"/>
+                <outlet property="bgViewRightMargin" destination="AlY-X3-v4m" id="Q31-Dt-ocA"/>
+                <outlet property="bgViewTopMargin" destination="EUx-4t-1Cr" id="ieI-bx-Sw6"/>
                 <outlet property="priceLabel" destination="n5q-5t-uRI" id="7dA-VV-ouc"/>
                 <outlet property="tilteLabel" destination="KuW-Ty-2Jj" id="W4c-RY-7Jh"/>
             </connections>
