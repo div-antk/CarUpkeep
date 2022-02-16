@@ -16,9 +16,6 @@ class PriceViewController: UIViewController, StoryboardInstantiatable {
     
     var result: Int = 0
     
-    private let viewModel = PriceViewModel()
-    private let disposeBag = DisposeBag()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -61,13 +58,6 @@ extension PriceViewController: UITableViewDelegate, UITableViewDataSource {
             guard let priceCell = tableView.dequeueReusableCell(withIdentifier: PriceTableViewCell.reusableIdentifier, for: indexPath) as? PriceTableViewCell else {
                 return UITableViewCell()
             }
-            
-            priceCell.priceTextField.rx.text.orEmpty
-                .asObservable()
-                .subscribe { [weak self] in
-                    // ViewModelで処理
-                }.disposed(by: disposeBag)
-
             
             return priceCell
             
