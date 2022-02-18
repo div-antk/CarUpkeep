@@ -13,12 +13,10 @@ class ResultTableViewCell: UITableViewCell, Reusable {
     
     @IBOutlet weak var tilteLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var bgLayerView: UIView!
     
     @IBOutlet weak var bgViewTopMargin: NSLayoutConstraint!
     @IBOutlet weak var bgViewLeftMargin: NSLayoutConstraint!
     @IBOutlet weak var bgViewRightMargin: NSLayoutConstraint!
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,16 +25,16 @@ class ResultTableViewCell: UITableViewCell, Reusable {
     
     @IBAction func bgButton(_ sender: UIButton) {
         
-        bgViewTopMargin.constant = 12
-        bgViewLeftMargin.constant = 24
-        bgViewRightMargin.constant = 24
+        bgViewTopMargin.constant = 8
+        bgViewLeftMargin.constant = 8
+        bgViewRightMargin.constant = 0
     }
     
     @IBAction func bgButtonTouchUpInside(_ sender: UIButton) {
         
-        bgViewTopMargin.constant = 4
-        bgViewLeftMargin.constant = 16
-        bgViewRightMargin.constant = 32
+        bgViewTopMargin.constant = 0
+        bgViewLeftMargin.constant = 0
+        bgViewRightMargin.constant = 8
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

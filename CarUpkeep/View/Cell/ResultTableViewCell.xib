@@ -18,13 +18,20 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sx-2a-gmF">
-                        <rect key="frame" x="16" y="0.0" width="365" height="56"/>
+                        <rect key="frame" x="16" y="0.0" width="357" height="56"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9NP-lb-UUQ">
+                                <rect key="frame" x="8" y="8" width="349" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="trk-Sa-Eo5"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DIE-6b-wdN">
-                                <rect key="frame" x="0.0" y="0.0" width="357" height="48"/>
+                                <rect key="frame" x="0.0" y="0.0" width="349" height="48"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuW-Ty-2Jj">
-                                        <rect key="frame" x="248" y="12" width="53" height="24"/>
+                                        <rect key="frame" x="240" y="12" width="53" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="v7b-0A-Rkt"/>
                                         </constraints>
@@ -33,13 +40,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqU-Nf-Oxe">
-                                        <rect key="frame" x="317" y="17" width="9" height="17"/>
+                                        <rect key="frame" x="309" y="17" width="9" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5q-5t-uRI">
-                                        <rect key="frame" x="330" y="14" width="11" height="20"/>
+                                        <rect key="frame" x="322" y="14" width="11" height="20"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -66,13 +73,6 @@
                                     <constraint firstItem="n5q-5t-uRI" firstAttribute="leading" secondItem="gqU-Nf-Oxe" secondAttribute="trailing" constant="4" id="mev-bN-85p"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9NP-lb-UUQ">
-                                <rect key="frame" x="8" y="8" width="357" height="48"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="trk-Sa-Eo5"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <constraints>
                             <constraint firstItem="9NP-lb-UUQ" firstAttribute="leading" secondItem="4sx-2a-gmF" secondAttribute="leading" constant="8" id="0Nq-AF-Wj6"/>
@@ -89,14 +89,16 @@
                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="4sx-2a-gmF" secondAttribute="bottom" id="U2m-Lc-beM"/>
-                    <constraint firstAttribute="trailing" secondItem="4sx-2a-gmF" secondAttribute="trailing" constant="16" id="Vel-qH-KHa"/>
+                    <constraint firstAttribute="trailing" secondItem="4sx-2a-gmF" secondAttribute="trailing" constant="24" id="Vel-qH-KHa"/>
                     <constraint firstItem="4sx-2a-gmF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="imf-sd-jPs"/>
                     <constraint firstItem="4sx-2a-gmF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="uGe-ty-XJp"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="bgLayerView" destination="DIE-6b-wdN" id="gwO-wT-ro1"/>
+                <outlet property="bgViewLeftMargin" destination="Yxq-vv-fin" id="Ooj-TY-BEg"/>
+                <outlet property="bgViewRightMargin" destination="cxp-d3-6Jl" id="FWn-N3-hx8"/>
+                <outlet property="bgViewTopMargin" destination="sgJ-vC-xRN" id="gIz-zj-hde"/>
                 <outlet property="priceLabel" destination="n5q-5t-uRI" id="7dA-VV-ouc"/>
                 <outlet property="tilteLabel" destination="KuW-Ty-2Jj" id="W4c-RY-7Jh"/>
             </connections>
