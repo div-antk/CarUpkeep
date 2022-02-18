@@ -17,9 +17,7 @@ class LiabilityInsuranceTableViewCell: UITableViewCell, Reusable {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        bgLayerView.layer.borderWidth = 2
-        bgLayerView.layer.borderColor = UIColor.white.cgColor
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
