@@ -14,7 +14,12 @@ class PriceViewController: UIViewController, StoryboardInstantiatable {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var price: Int = 0
+    var installments: Int = 0
+    var interest: Int = 0
     var result: Int = 0
+    
+    private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +64,10 @@ extension PriceViewController: UITableViewDelegate, UITableViewDataSource {
                 return UITableViewCell()
             }
             
+            self.price = priceCell.price
+            self.installments = priceCell.installments
+            self.interest = priceCell.interest
+
             return priceCell
             
         case 2:
@@ -67,7 +76,16 @@ extension PriceViewController: UITableViewDelegate, UITableViewDataSource {
             }
             
             resultCell.tilteLabel.text = "*ローン"
-            resultCell.priceLabel.text = String(result)
+//            resultCell.priceLabel.text = String(result)
+           
+            resultCell.resultButton.rx.tap.subscribe({ [weak self] _ in
+                if let price = self?.price {
+                    self?.result = price / 12
+                    print(price, self?.result)
+                }
+//                resultCell.priceLabel.text
+
+            }).disposed(by: disposeBag)
             
             return resultCell
             

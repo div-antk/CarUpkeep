@@ -13,6 +13,7 @@ class ResultTableViewCell: UITableViewCell, Reusable {
     
     @IBOutlet weak var tilteLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var resultButton: UIButton!
     
     @IBOutlet weak var bgViewTopMargin: NSLayoutConstraint!
     @IBOutlet weak var bgViewLeftMargin: NSLayoutConstraint!

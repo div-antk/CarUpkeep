@@ -100,6 +100,7 @@
                 <outlet property="bgViewRightMargin" destination="cxp-d3-6Jl" id="FWn-N3-hx8"/>
                 <outlet property="bgViewTopMargin" destination="sgJ-vC-xRN" id="gIz-zj-hde"/>
                 <outlet property="priceLabel" destination="n5q-5t-uRI" id="7dA-VV-ouc"/>
+                <outlet property="resultButton" destination="wOI-6a-2Lb" id="23h-jx-cYE"/>
                 <outlet property="tilteLabel" destination="KuW-Ty-2Jj" id="W4c-RY-7Jh"/>
             </connections>
             <point key="canvasLocation" x="193.47826086956522" y="101.11607142857143"/>

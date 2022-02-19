@@ -8,6 +8,8 @@
 import UIKit
 import Instantiate
 import InstantiateStandard
+import RxSwift
+import RxCocoa
 
 class PriceTableViewCell: UITableViewCell, Reusable {
 
@@ -16,7 +18,7 @@ class PriceTableViewCell: UITableViewCell, Reusable {
     @IBOutlet weak var installmentsTextField: UITextField!
     @IBOutlet weak var interestTextField: UITextField!
     
-    var price: Int?
+    var price: Int = 0
     var installments: Int = 0
     var interest: Int = 0
     
@@ -25,7 +27,7 @@ class PriceTableViewCell: UITableViewCell, Reusable {
 
         bgLayerView.layer.borderWidth = 2
         bgLayerView.layer.borderColor = UIColor.white.cgColor
-        
+       
         installments = Int(installmentsTextField.text ?? "0") ?? 0
         interest = Int(interestTextField.text ?? "0") ?? 0
         
@@ -34,6 +36,7 @@ class PriceTableViewCell: UITableViewCell, Reusable {
     @IBAction func priceTextField(_ sender: UITextField) {
         price = sender.textToInt
     }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
