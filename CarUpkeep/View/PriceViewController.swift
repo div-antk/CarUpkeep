@@ -63,8 +63,12 @@ extension PriceViewController: UITableViewDelegate, UITableViewDataSource {
             guard let priceCell = tableView.dequeueReusableCell(withIdentifier: PriceTableViewCell.reusableIdentifier, for: indexPath) as? PriceTableViewCell else {
                 return UITableViewCell()
             }
+           
+            priceCell.priceTextField.rx.text.orEmpty.asDriver()
+                .drive(onNext: { [weak self] price in
+                    self?.price = Int(price) ?? 0
+                }).disposed(by: disposeBag)
             
-            self.price = priceCell.price
             self.installments = priceCell.installments
             self.interest = priceCell.interest
 
