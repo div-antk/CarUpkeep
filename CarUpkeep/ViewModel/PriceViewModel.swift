@@ -49,27 +49,18 @@ class PriceViewModel: PriceViewModelInputs, PriceViewModelOutputs {
         let _result = PublishRelay<Int>()
         self.result = _result.asObservable()
         
-        _price
-            .debounce(RxTimeInterval.seconds(1), scheduler: MainScheduler.instance)
-            .flatMap { priceString in
-//                priceString / 24
-                priceCalc(priceString: priceString)
-            }
-            .subscribe(onNext: { result in
-                _result.accept(result)
-            })
-            .disposed(by: disposeBag)
-        
-        // 検索で記事を取得（Moya）
-//        _searchWord
+//        _price
 //            .debounce(RxTimeInterval.seconds(1), scheduler: MainScheduler.instance)
-//            .flatMap { searchWord in
-//                ArticleRepository.searchArticles(searchWord: searchWord)
+//            .flatMap { priceString in
+////                priceString / 24
+//                priceCalc(priceString: priceString)
 //            }
-//            .subscribe(onNext: { response in
-//                _articles.accept(response)
+//            .subscribe(onNext: { result in
+//                _result.accept(result)
 //            })
 //            .disposed(by: disposeBag)
+//
+
 
     }
     
