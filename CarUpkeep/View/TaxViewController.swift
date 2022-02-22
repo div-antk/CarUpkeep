@@ -7,10 +7,16 @@
 
 import UIKit
 import Instantiate
+import RxSwift
+import RxCocoa
 
 class TaxViewController: UIViewController, StoryboardInstantiatable {
     
     @IBOutlet weak var tableView: UITableView!
+    
+    var displacement: Int = 0
+    
+    private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +64,12 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
             guard let automobileTaxCell = tableView.dequeueReusableCell(withIdentifier: AutomobileTaxTableViewCell.reusableIdentifier, for: indexPath) as? AutomobileTaxTableViewCell else {
                 return UITableViewCell()
             }
+           
+            automobileTaxCell.displacementTextField.rx.text.orEmpty.asDriver()
+                .drive(onNext: { [weak self] displacement in
+                    self?.displacement = Int(displacement) ?? 0
+                }).disposed(by: disposeBag)
+
             
             return automobileTaxCell
             
