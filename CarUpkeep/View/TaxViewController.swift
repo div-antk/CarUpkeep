@@ -108,6 +108,18 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
             }
             
             resultCell.tilteLabel.text = "*自動車税"
+           
+            resultCell.resultButton.rx.tap.subscribe({ [weak self] _ in
+                if
+                    let displacement = self?.displacement,
+                    let keiCarFlg = self?.keiCarFlg,
+                    let thirteenFlg = self?.thirteenFlg,
+                    let hybridCarFlg = self?.hybridCarFlg
+                {
+                    let result = self?.automobileTaxCalc(displacement: displacement, isKeiCar: keiCarFlg, isThirteen: thirteenFlg, isHybridCar: hybridCarFlg)
+                    resultCell.priceLabel.text = result
+                }
+            }).disposed(by: disposeBag)
             
             return resultCell
             
@@ -136,5 +148,9 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
         default:
             return UITableViewCell()
         }
+    }
+    
+    func automobileTaxCalc(displacement: Int, isKeiCar: Bool, isThirteen: Bool, isHybridCar: Bool) -> String {
+        return "計算結果"
     }
 }
