@@ -37,6 +37,7 @@ class AutomobileTaxTableViewCell: UITableViewCell, Reusable {
         if sender.isOn {
             displacementTextField.text = ""
             displacementTextField.backgroundColor = .orange
+            hybridCarSwitch.isOn = false
         } else {
             displacementTextField.backgroundColor = .white
         }
@@ -46,6 +47,7 @@ class AutomobileTaxTableViewCell: UITableViewCell, Reusable {
     }
     
     @IBAction func hybridCarSwitch(_ sender: UISwitch) {
+        keiCarSwitch.isOn = false
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
