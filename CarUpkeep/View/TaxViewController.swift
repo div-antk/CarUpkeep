@@ -15,7 +15,10 @@ class TaxViewController: UIViewController, StoryboardInstantiatable {
     @IBOutlet weak var tableView: UITableView!
     
     var displacement: Int = 0
-    
+    var keiCarFlg: Bool = false
+    var thirteenFlg: Bool = false
+    var hybridCarFlg: Bool = false
+        
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -70,6 +73,32 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
                     self?.displacement = Int(displacement) ?? 0
                 }).disposed(by: disposeBag)
 
+            automobileTaxCell.keiCarSwitch.rx.value.share(replay: 1)
+                .subscribe(onNext: { [weak self] isKeiCar in
+                    if isKeiCar {
+                        self?.keiCarFlg = true
+                    } else {
+                        self?.keiCarFlg = false
+                    }
+                }).disposed(by: disposeBag)
+            
+            automobileTaxCell.thirteenSwitch.rx.value.share(replay: 1)
+                .subscribe(onNext: { [weak self] isThirteen in
+                    if isThirteen {
+                        self?.thirteenFlg = true
+                    } else {
+                        self?.thirteenFlg = false
+                    }
+                }).disposed(by: disposeBag)
+            
+            automobileTaxCell.hybridCarSwitch.rx.value.share(replay: 1)
+                .subscribe(onNext: { [weak self] isHybridCar in
+                    if isHybridCar {
+                        self?.hybridCarFlg = true
+                    } else {
+                        self?.hybridCarFlg = false
+                    }
+                }).disposed(by: disposeBag)
             
             return automobileTaxCell
             
