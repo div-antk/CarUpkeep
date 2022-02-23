@@ -151,6 +151,13 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func automobileTaxCalc(displacement: Int, isKeiCar: Bool, isThirteen: Bool, isHybridCar: Bool) -> String {
-        return "計算結果"
+        
+        if isKeiCar == true && isThirteen == true {
+            return "1,075"
+        } else if isKeiCar == true {
+            return "900"
+        } else {
+            return "****"
+        }
     }
 }
