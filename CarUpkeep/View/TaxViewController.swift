@@ -149,6 +149,35 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
     }
+    func displacementDetermine(displacement: Int) -> Int {
+        
+        if displacement > 6000 {
+            return 111000
+        }
+        
+        switch displacement {
+        case 0...1000:
+            return 29500
+        case 1001...1500:
+            return 34500
+        case 1501...2000:
+            return 39500
+        case 2001...2500:
+            return 45000
+        case 2501...3000:
+            return 51000
+        case 3001...3500:
+            return 58000
+        case 3501...4000:
+            return 66500
+        case 4001...4500:
+            return 76500
+        case 4501...6000:
+            return 88000
+        default:
+            return 0
+        }
+    }
     
     func automobileTaxCalc(displacement: Int, isKeiCar: Bool, isThirteen: Bool, isHybridCar: Bool) -> String {
         
