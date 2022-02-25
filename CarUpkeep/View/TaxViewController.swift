@@ -70,7 +70,7 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
            
             automobileTaxCell.displacementTextField.rx.text.orEmpty.asDriver()
                 .drive(onNext: { [weak self] displacement in
-                    self?.displacement = Int(displacement) ?? 0
+                    self?.displacement = self?.displacementDetermine(displacement: Int(displacement) ?? 0) ?? 0
                 }).disposed(by: disposeBag)
 
             automobileTaxCell.keiCarSwitch.rx.value.share(replay: 1)
