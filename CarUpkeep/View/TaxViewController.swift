@@ -149,6 +149,7 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
     }
+    
     func displacementDetermine(displacement: Int) -> Int {
         
         if displacement > 6000 {
@@ -178,13 +179,17 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
             return 0
         }
     }
-    
-    func automobileTaxCalc(displacement: Int, isKeiCar: Bool, isThirteen: Bool, isHybridCar: Bool) -> String {
         
+    func automobileTaxCalc(displacement: Int, isKeiCar: Bool, isThirteen: Bool, isHybridCar: Bool) -> String {
+        print(displacement, isKeiCar, isThirteen, isHybridCar)
         if isKeiCar == true && isThirteen == true {
             return "1,075"
         } else if isKeiCar == true {
             return "900"
+        } else if displacement > 0 && isThirteen {
+            let greenTax:Int = displacement * Int(Double(0.15))
+            print(greenTax, displacement + greenTax)
+            return String(displacement + greenTax)
         } else {
             return "****"
         }
