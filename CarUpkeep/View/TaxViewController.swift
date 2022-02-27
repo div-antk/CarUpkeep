@@ -187,9 +187,10 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
         } else if isKeiCar == true {
             return "900"
         } else if displacement > 0 && isThirteen {
-            let greenTax:Int = displacement * Int(Double(0.15))
-            print(greenTax, displacement + greenTax)
-            return String(displacement + greenTax)
+            // 新規登録から13年経過した車はグリーン化税制によって税率が15%アップ
+            let greenTax = Double(displacement) * 0.15
+            // 結果を12で割って月額を算出
+            return String(Int(Double(displacement) + greenTax) / 12)
         } else {
             return "****"
         }
