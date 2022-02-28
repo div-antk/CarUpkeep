@@ -191,6 +191,8 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
             let greenTax = Double(displacement) * 0.15
             // 結果を12で割って月額を算出。3桁ごとにカンマ区切りにする
             return String.localizedStringWithFormat("%d", Int(Double(displacement) + greenTax) / 12)
+        } else if displacement > 0 {
+            return String.localizedStringWithFormat("%d", displacement / 12)
         } else {
             return "****"
         }
