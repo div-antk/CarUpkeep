@@ -17,7 +17,6 @@ class TaxViewController: UIViewController, StoryboardInstantiatable {
     var displacement: Int = 0
     var keiCarFlg: Bool = false
     var thirteenFlg: Bool = false
-    var hybridCarFlg: Bool = false
         
     private let disposeBag = DisposeBag()
     
@@ -91,15 +90,6 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
                     }
                 }).disposed(by: disposeBag)
             
-            automobileTaxCell.hybridCarSwitch.rx.value.share(replay: 1)
-                .subscribe(onNext: { [weak self] isHybridCar in
-                    if isHybridCar {
-                        self?.hybridCarFlg = true
-                    } else {
-                        self?.hybridCarFlg = false
-                    }
-                }).disposed(by: disposeBag)
-            
             return automobileTaxCell
             
         case 2:
@@ -114,9 +104,8 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
                     let displacement = self?.displacement,
                     let keiCarFlg = self?.keiCarFlg,
                     let thirteenFlg = self?.thirteenFlg,
-                    let hybridCarFlg = self?.hybridCarFlg
                 {
-                    let result = self?.automobileTaxCalc(displacement: displacement, isKeiCar: keiCarFlg, isThirteen: thirteenFlg, isHybridCar: hybridCarFlg)
+                    let result = self?.automobileTaxCalc(displacement: displacement, isKeiCar: keiCarFlg, isThirteen: thirteenFlg)
                     resultCell.priceLabel.text = result
                 }
             }).disposed(by: disposeBag)
@@ -180,8 +169,8 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
         
-    func automobileTaxCalc(displacement: Int, isKeiCar: Bool, isThirteen: Bool, isHybridCar: Bool) -> String {
-        print(displacement, isKeiCar, isThirteen, isHybridCar)
+    func automobileTaxCalc(displacement: Int, isKeiCar: Bool, isThirteen: Bool) -> String {
+        print(displacement, isKeiCar, isThirteen)
         if isKeiCar == true && isThirteen == true {
             return "1,075"
         } else if isKeiCar == true {
