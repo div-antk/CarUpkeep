@@ -103,7 +103,7 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
                 if
                     let displacement = self?.displacement,
                     let keiCarFlg = self?.keiCarFlg,
-                    let thirteenFlg = self?.thirteenFlg,
+                    let thirteenFlg = self?.thirteenFlg
                 {
                     let result = self?.automobileTaxCalc(displacement: displacement, isKeiCar: keiCarFlg, isThirteen: thirteenFlg)
                     resultCell.priceLabel.text = result
