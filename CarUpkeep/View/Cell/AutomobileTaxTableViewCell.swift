@@ -15,7 +15,6 @@ class AutomobileTaxTableViewCell: UITableViewCell, Reusable {
     @IBOutlet weak var displacementTextField: UITextField!
     @IBOutlet weak var keiCarSwitch: UISwitch!
     @IBOutlet weak var thirteenSwitch: UISwitch!
-    @IBOutlet weak var hybridCarSwitch: UISwitch!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -44,10 +43,6 @@ class AutomobileTaxTableViewCell: UITableViewCell, Reusable {
     }
     
     @IBAction func thirteenSwitch(_ sender: UISwitch) {
-    }
-    
-    @IBAction func hybridCarSwitch(_ sender: UISwitch) {
-        keiCarSwitch.isOn = false
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
