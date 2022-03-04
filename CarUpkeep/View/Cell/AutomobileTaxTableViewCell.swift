@@ -36,7 +36,6 @@ class AutomobileTaxTableViewCell: UITableViewCell, Reusable {
         if sender.isOn {
             displacementTextField.text = ""
             displacementTextField.backgroundColor = .orange
-            hybridCarSwitch.isOn = false
         } else {
             displacementTextField.backgroundColor = .white
         }

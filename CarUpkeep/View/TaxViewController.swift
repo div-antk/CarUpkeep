@@ -146,7 +146,7 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         switch displacement {
-        case 0...1000:
+        case 1...1000:
             return 29500
         case 1001...1500:
             return 34500
@@ -172,8 +172,10 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
     func automobileTaxCalc(displacement: Int, isKeiCar: Bool, isThirteen: Bool) -> String {
         print(displacement, isKeiCar, isThirteen)
         if isKeiCar == true && isThirteen == true {
+            self.displacement = 0
             return "1,075"
         } else if isKeiCar == true {
+            self.displacement = 0
             return "900"
         } else if displacement > 0 && isThirteen {
             // 新規登録から13年経過した車はグリーン化税制によって税率が15%アップ
@@ -183,7 +185,7 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
         } else if displacement > 0 {
             return String.localizedStringWithFormat("%d", displacement / 12)
         } else {
-            return "****"
+            return "0"
         }
     }
 }
