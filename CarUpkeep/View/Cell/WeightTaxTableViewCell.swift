@@ -16,7 +16,6 @@ class WeightTaxTableViewCell: UITableViewCell, Reusable {
     @IBOutlet weak var keiCarSwitch: UISwitch!
     @IBOutlet weak var thirteenSwitch: UISwitch!
     @IBOutlet weak var eighteenSwitch: UISwitch!
-    @IBOutlet weak var hybridCarSwitch: UISwitch!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -52,9 +51,6 @@ class WeightTaxTableViewCell: UITableViewCell, Reusable {
         if sender.isOn {
             thirteenSwitch.isOn = false
         }
-    }
-    
-    @IBAction func hybridCarSwitch(_ sender: UISwitch) {
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

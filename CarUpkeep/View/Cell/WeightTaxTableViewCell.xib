@@ -18,14 +18,8 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nHB-IX-SVh">
-                        <rect key="frame" x="24" y="4" width="272" height="260"/>
+                        <rect key="frame" x="24" y="4" width="272" height="200"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ハイブリッド車" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkC-XK-qRB">
-                                <rect key="frame" x="76.5" y="210.5" width="114.5" height="20"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="軽自動車" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhb-He-HwZ">
                                 <rect key="frame" x="125" y="61.5" width="66" height="20"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
@@ -36,12 +30,6 @@
                                 <rect key="frame" x="199" y="111" width="51" height="31"/>
                                 <connections>
                                     <action selector="thirteenSwitch:" destination="KGk-i7-Jjw" eventType="valueChanged" id="GbZ-FL-Fld"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9l9-og-68i">
-                                <rect key="frame" x="199" y="205" width="51" height="31"/>
-                                <connections>
-                                    <action selector="hybridCarSwitch:" destination="KGk-i7-Jjw" eventType="valueChanged" id="5dG-UX-GOm"/>
                                 </connections>
                             </switch>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qkw-Dr-nHj">
@@ -137,13 +125,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
-                            <constraint firstItem="9l9-og-68i" firstAttribute="centerY" secondItem="CkC-XK-qRB" secondAttribute="centerY" id="01x-ks-x2d"/>
                             <constraint firstItem="3kY-HR-EGn" firstAttribute="bottom" secondItem="Qkw-Dr-nHj" secondAttribute="bottom" id="0GW-Jn-YCu"/>
                             <constraint firstItem="Dhb-He-HwZ" firstAttribute="bottom" secondItem="L8j-ia-AEN" secondAttribute="bottom" id="51u-tT-nh9"/>
                             <constraint firstItem="BXO-FG-MW1" firstAttribute="top" secondItem="Uc6-3O-vhE" secondAttribute="bottom" constant="24" id="7B2-uR-iF1"/>
-                            <constraint firstItem="9l9-og-68i" firstAttribute="top" secondItem="lOr-1T-Vyw" secondAttribute="bottom" constant="24" id="8G4-lV-Dpc"/>
                             <constraint firstAttribute="trailing" secondItem="3kY-HR-EGn" secondAttribute="trailing" constant="24" id="CIo-0E-P6F"/>
-                            <constraint firstItem="9l9-og-68i" firstAttribute="trailing" secondItem="Uc6-3O-vhE" secondAttribute="trailing" id="JFf-dk-1EM"/>
                             <constraint firstItem="lOr-1T-Vyw" firstAttribute="leading" secondItem="xAY-4J-fYZ" secondAttribute="trailing" constant="8" id="NVO-Cn-gdU"/>
                             <constraint firstItem="Qkw-Dr-nHj" firstAttribute="top" secondItem="nHB-IX-SVh" secondAttribute="top" constant="16" id="Q7x-4X-hez"/>
                             <constraint firstItem="Uc6-3O-vhE" firstAttribute="top" secondItem="Qkw-Dr-nHj" secondAttribute="bottom" constant="8" id="SaW-0I-v1v"/>
@@ -161,9 +146,8 @@
                             <constraint firstItem="3kY-HR-EGn" firstAttribute="trailing" secondItem="Uc6-3O-vhE" secondAttribute="trailing" id="sMT-fQ-4MY"/>
                             <constraint firstItem="xAY-4J-fYZ" firstAttribute="bottom" secondItem="twH-G0-jTU" secondAttribute="bottom" id="szw-sB-bKY"/>
                             <constraint firstItem="BXO-FG-MW1" firstAttribute="trailing" secondItem="Uc6-3O-vhE" secondAttribute="trailing" id="tY4-03-zU7"/>
-                            <constraint firstItem="9l9-og-68i" firstAttribute="leading" secondItem="CkC-XK-qRB" secondAttribute="trailing" constant="8" id="teq-KY-iWk"/>
                             <constraint firstItem="Uc6-3O-vhE" firstAttribute="centerY" secondItem="Dhb-He-HwZ" secondAttribute="centerY" id="uRj-t0-HJy"/>
-                            <constraint firstAttribute="height" constant="260" id="wlk-OJ-fRP"/>
+                            <constraint firstAttribute="height" constant="200" id="wlk-OJ-fRP"/>
                             <constraint firstItem="Dhb-He-HwZ" firstAttribute="leading" secondItem="L8j-ia-AEN" secondAttribute="trailing" constant="4" id="yEs-Ot-6Gp"/>
                         </constraints>
                     </view>
@@ -180,7 +164,6 @@
             <connections>
                 <outlet property="bgLayerView" destination="nHB-IX-SVh" id="MJb-a9-H4a"/>
                 <outlet property="eighteenSwitch" destination="lOr-1T-Vyw" id="cVK-0O-9EK"/>
-                <outlet property="hybridCarSwitch" destination="9l9-og-68i" id="sUT-T4-RvA"/>
                 <outlet property="keiCarSwitch" destination="Uc6-3O-vhE" id="cs5-tT-lI0"/>
                 <outlet property="thirteenSwitch" destination="BXO-FG-MW1" id="ZOC-0f-HQy"/>
                 <outlet property="weightTextField" destination="Qkw-Dr-nHj" id="4LK-gV-S1t"/>
