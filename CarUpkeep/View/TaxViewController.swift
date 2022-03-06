@@ -16,7 +16,7 @@ class TaxViewController: UIViewController, StoryboardInstantiatable {
     
     var displacement: Int = 0
     var keiCarFlg: Bool = false
-    var thirteenFlg: Bool = false
+    var carTax13Flg: Bool = false
         
     private let disposeBag = DisposeBag()
     
@@ -84,9 +84,9 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
             automobileTaxCell.thirteenSwitch.rx.value.share(replay: 1)
                 .subscribe(onNext: { [weak self] isThirteen in
                     if isThirteen {
-                        self?.thirteenFlg = true
+                        self?.carTax13Flg = true
                     } else {
-                        self?.thirteenFlg = false
+                        self?.carTax13Flg = false
                     }
                 }).disposed(by: disposeBag)
             
@@ -103,9 +103,9 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
                 if
                     let displacement = self?.displacement,
                     let keiCarFlg = self?.keiCarFlg,
-                    let thirteenFlg = self?.thirteenFlg
+                    let carTax13Flg = self?.carTax13Flg
                 {
-                    let result = self?.automobileTaxCalc(displacement: displacement, isKeiCar: keiCarFlg, isThirteen: thirteenFlg)
+                    let result = self?.automobileTaxCalc(displacement: displacement, isKeiCar: keiCarFlg, isThirteen: carTax13Flg)
                     resultCell.priceLabel.text = result
                 }
             }).disposed(by: disposeBag)
