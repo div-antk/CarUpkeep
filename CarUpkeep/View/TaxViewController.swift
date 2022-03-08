@@ -177,7 +177,25 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
     }
       
     func weightDetermine(weight: Int) -> Int {
-        return 0
+        
+        if weight <= 0.5 {
+            return 8200
+        }
+        
+        switch weight {
+        case 0.5...1:
+            return 16400
+        case 1...1.5:
+            return 24600
+        case 1.5...2:
+            return 32800
+        case 2...2.5:
+            return 41000
+        case 2.5...3:
+            return 49200
+        default:
+            return 0
+        }
     }
     
     func automobileTaxCalc(displacement: Int, isKeiCar: Bool, isThirteen: Bool) -> String {
