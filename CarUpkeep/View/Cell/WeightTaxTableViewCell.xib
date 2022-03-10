@@ -38,7 +38,7 @@
                                     <constraint firstAttribute="height" constant="32" id="2GE-zT-EZG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="weightTextField:" destination="KGk-i7-Jjw" eventType="editingDidEnd" id="kUk-1M-g6e"/>
                                 </connections>

@@ -18,7 +18,7 @@ class TaxViewController: UIViewController, StoryboardInstantiatable {
     var keiCarFlg: Bool = false
     var carTax13Flg: Bool = false
     
-    var weight: Int = 0
+    var weight: Double = 0
 
     private let disposeBag = DisposeBag()
     
@@ -127,7 +127,7 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
             
             weightTaxCell.weightTextField.rx.text.orEmpty.asDriver()
                 .drive(onNext: { [weak self] weight in
-                    self?.weight = self?.weightDetermine(weight: Int(weight) ?? 0) ?? 0
+                    self?.weight = Double(self?.weightDetermine(weight: Double(weight) ?? 0) ?? 0)
                 }).disposed(by: disposeBag)
             
             return weightTaxCell
@@ -176,26 +176,27 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
       
-    func weightDetermine(weight: Int) -> Int {
+    func weightDetermine(weight: Double) -> Int {
         
-        if weight <= 0.5 {
-            return 8200
-        }
-        
-        switch weight {
-        case 0.5...1:
-            return 16400
-        case 1...1.5:
-            return 24600
-        case 1.5...2:
-            return 32800
-        case 2...2.5:
-            return 41000
-        case 2.5...3:
-            return 49200
-        default:
+        print(weight)
+//        if weight <= 0.5 {
+//            return 8200
+//        }
+//
+//        switch weight {
+//        case 0.5...1:
+//            return 16400
+//        case 1...1.5:
+//            return 24600
+//        case 1.5...2:
+//            return 32800
+//        case 2...2.5:
+//            return 41000
+//        case 2.5...3:
+//            return 49200
+//        default:
             return 0
-        }
+//        }
     }
     
     func automobileTaxCalc(displacement: Int, isKeiCar: Bool, isThirteen: Bool) -> String {
