@@ -19,6 +19,7 @@ class TaxViewController: UIViewController, StoryboardInstantiatable {
     var carTax13Flg: Bool = false
     
     var weight: Int = 0
+    var weightTax13Flg: Bool = false
 
     private let disposeBag = DisposeBag()
     
@@ -128,6 +129,15 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
             weightTaxCell.weightTextField.rx.text.orEmpty.asDriver()
                 .drive(onNext: { [weak self] weight in
                     self?.weight = Int(self?.weightDetermine(weight: Double(weight) ?? 0) ?? 0)
+                }).disposed(by: disposeBag)
+            
+            weightTaxCell.thirteenSwitch.rx.value.share(replay: 1)
+                .subscribe(onNext: { [weak self] isThirteen in
+                    if isThirteen {
+                        self?.weightTax13Flg = true
+                    } else {
+                        self?.weightTax13Flg = false
+                    }
                 }).disposed(by: disposeBag)
             
             return weightTaxCell
