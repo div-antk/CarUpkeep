@@ -15,12 +15,13 @@ class TaxViewController: UIViewController, StoryboardInstantiatable {
     @IBOutlet weak var tableView: UITableView!
     
     var displacement: Int = 0
-    var keiCarFlg: Bool = false
+    var carTaxkeiCarFlg: Bool = false
     var carTax13Flg: Bool = false
     
     var weight: Int = 0
     var weightTax13Flg: Bool = false
-
+    var weightTaxkeiCarFlg: Bool = false
+    
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -78,9 +79,9 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
             automobileTaxCell.keiCarSwitch.rx.value.share(replay: 1)
                 .subscribe(onNext: { [weak self] isKeiCar in
                     if isKeiCar {
-                        self?.keiCarFlg = true
+                        self?.carTaxkeiCarFlg = true
                     } else {
-                        self?.keiCarFlg = false
+                        self?.carTaxkeiCarFlg = false
                     }
                 }).disposed(by: disposeBag)
             
@@ -105,7 +106,7 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
             resultCell.resultButton.rx.tap.subscribe({ [weak self] _ in
                 if
                     let displacement = self?.displacement,
-                    let keiCarFlg = self?.keiCarFlg,
+                    let keiCarFlg = self?.carTaxkeiCarFlg,
                     let carTax13Flg = self?.carTax13Flg
                 {
                     let result = self?.automobileTaxCalc(displacement: displacement, isKeiCar: keiCarFlg, isThirteen: carTax13Flg)
@@ -137,6 +138,15 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
                         self?.weightTax13Flg = true
                     } else {
                         self?.weightTax13Flg = false
+                    }
+                }).disposed(by: disposeBag)
+            
+            weightTaxCell.keiCarSwitch.rx.value.share(replay: 1)
+                .subscribe(onNext: { [weak self] isKeiCar in
+                    if isKeiCar {
+                        self?.weightTaxkeiCarFlg = true
+                    } else {
+                        self?.weightTaxkeiCarFlg = false
                     }
                 }).disposed(by: disposeBag)
             
