@@ -20,6 +20,7 @@ class TaxViewController: UIViewController, StoryboardInstantiatable {
     
     var weight: Int = 0
     var weightTax13Flg: Bool = false
+    var weightTax18Flg: Bool = false
     var weightTaxkeiCarFlg: Bool = false
     
     private let disposeBag = DisposeBag()
@@ -138,6 +139,15 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
                         self?.weightTax13Flg = true
                     } else {
                         self?.weightTax13Flg = false
+                    }
+                }).disposed(by: disposeBag)
+            
+            weightTaxCell.thirteenSwitch.rx.value.share(replay: 1)
+                .subscribe(onNext: { [weak self] isThirteen in
+                    if isThirteen {
+                        self?.weightTax18Flg = true
+                    } else {
+                        self?.weightTax18Flg = false
                     }
                 }).disposed(by: disposeBag)
             
