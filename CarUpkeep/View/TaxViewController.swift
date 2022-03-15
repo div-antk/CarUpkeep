@@ -229,13 +229,36 @@ extension TaxViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func automobileTaxCalc(displacement: Int, isKeiCar: Bool, isThirteen: Bool) -> String {
-        print(displacement, isKeiCar, isThirteen)
+
         if isKeiCar == true && isThirteen == true {
             self.displacement = 0
             return "1,075"
         } else if isKeiCar == true {
             self.displacement = 0
             return "900"
+        } else if displacement > 0 && isThirteen {
+            // 新規登録から13年経過した車はグリーン化税制によって税率が15%アップ
+            let greenTax = Double(displacement) * 0.15
+            // 結果を12で割って月額を算出。3桁ごとにカンマ区切りにする
+            return String.localizedStringWithFormat("%d", Int(Double(displacement) + greenTax) / 12)
+        } else if displacement > 0 {
+            return String.localizedStringWithFormat("%d", displacement / 12)
+        } else {
+            return "0"
+        }
+    }
+    
+    func weightTaxCalc(weight: Int, isKeiCar: Bool, isThirteen: Bool, isEighteen: Bool) -> String {
+        print(weight, isKeiCar, isThirteen, isEighteen)
+        if isKeiCar == true && isThirteen == true {
+            self.displacement = 0
+            return ""
+        } else if isKeiCar == true && isEighteen == true {
+
+            return ""
+        } else if isKeiCar == true {
+            self.displacement = 0
+            return ""
         } else if displacement > 0 && isThirteen {
             // 新規登録から13年経過した車はグリーン化税制によって税率が15%アップ
             let greenTax = Double(displacement) * 0.15
